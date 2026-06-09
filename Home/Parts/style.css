@@ -1,0 +1,696 @@
+@font-face {
+    font-family: "Helvetica Neue LT Pro";
+    src: url("../../assets/Home/Fonts/HelveticaNeueLTProBd.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Helvetica Neue LT Prox";
+    src: url("../../assets/Home/Fonts/HelveticaNeueLTProUltLtEx.otf format")("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+/* header */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.full-Header {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 8px 20px -10px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1% 10%;
+}
+
+
+.navlink {
+    flex: 1;
+}
+
+.navlink-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.centralNavLink {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Helvetica Neue LT Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.centralNavLink:hover {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+
+.navlogo {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    transform: translateX(-50px);
+}
+
+.navlogoitem {
+    width: 180px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+.navrightside {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-location-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.selectStoreNumber {
+    margin: 0;
+    font-size: 14px;
+    color: #5B95A9;
+}
+
+.selectedStoreName {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    font-family: Helvetica Neue LT Pro;
+    font-weight: 500;
+    font-style: 65 Medium;
+    font-size: 16px;
+    /* leading-trim: NONE; */
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right;
+
+}
+
+
+
+
+#toggle_search_box {
+    background: transparent;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    padding: 8px 18px;
+    border: none;
+
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .navlogoitem {
+        width: 150px;
+    }
+
+    .navlink-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .full-Header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .navlink,
+    .navrightside {
+        flex: unset;
+        width: 100%;
+    }
+
+    .navlink-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navrightside {
+        justify-content: center;
+    }
+
+    .header-location-box {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .full-Header {
+        padding: 15px;
+    }
+
+    .navlink-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navrightside {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navlogoitem {
+        width: 130px;
+    }
+}
+
+/* Home---------------------------------------------- */
+
+
+/* Hero sectio ----------- */
+.homesection {
+    width: 100%;
+    /* height: 800px;    */
+    top: 80px;
+    /* angle: 0 deg; */
+    opacity: 1;
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.heroheading {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    color: white;
+    z-index: 2;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.heroheadingh1 {
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* H1 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    /* 100% */
+    letter-spacing: -1.6px;
+}
+
+.homebtn {
+    width: 200px;
+    height: 48px;
+    opacity: 1;
+    border-radius: 24px;
+    background-color: #5B95A9;
+    text-align: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    opacity: 0.8;
+    background: var(--Blackish, #201E1F);
+}
+
+.heroh3head {
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+}
+
+.heroh5 {
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* h5 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+/* Hero sectio n */
+
+/* Advantage */
+.Advantagesection {
+    /* background-color: ; */
+    background: var(--Lightest-Gray---FA, #FAFAFA);
+}
+
+.bestcareleft {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+    justify-content: center;
+    max-width: 600px;
+}
+
+.bestcareleft h2 {
+    /* color: var(--Blackish, #201E1F); */
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+}
+
+.bestcareleft p {
+    /* color: var(--Blackish, #201E1F); */
+
+    font-family: "Helvetica Neue LT Proex";
+    font-size: 16px;
+    /* font-style: normal; */
+    font-weight: 300;
+    line-height: 28px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+.service-list {
+    margin-left: 10px;
+}
+
+/* authorize section */
+.authorize {
+    padding: 80px 0;
+}
+
+.authorizetop {
+    max-width: 880px;
+    text-align: center;
+}
+
+.authorizetoph2 {
+    color: #000;
+    text-align: center;
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+    padding-bottom: 24px;
+}
+
+/* authorize section---------------------------------------------------- */
+.authorizicondev {
+    border: 1px solid #201E1F;
+    border-radius: 16px;
+    padding: 40px 60px;
+}
+
+/* authorize section---------------------------------------------------- */
+/* authorize section---------------------------------------------------- */
+.leftexpertcard {
+    background-color: #000;
+    color: white;
+    padding: 90px 0;
+}
+
+.rightexpertcard {
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 100%;
+}
+
+/* authorize section---------------------------------------------------- */
+/* line ----------------------------------------*/
+.line {
+    background: #E6E6E6;
+    height: 1px;
+    margin: 5% 0;
+}
+
+/* line */
+/* request section--------------------- */
+.request-raper {
+    max-width: 520px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.requestheader {
+    color: var(--Blackish, #201E1F);
+    text-align: center;
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+}
+.requestinput{
+    border-radius: 24px;
+    border: 1px solid #D9D9D9;
+    width: 100%;
+    padding: 10px 0 7px 5% ;
+}
+/* request section--------------------- */
+/* service faq------------------------------------------------------ */
+.headertopsectinheader{
+color: var(--Blackish, #201E1F);
+text-align: center;
+
+/* h2 */
+font-family: "Helvetica Neue LT Pro";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 52px; /* 108.333% */
+letter-spacing: -0.96px;
+
+}
+.headertopsectintext{
+    color: var(--Blackish, #201E1F);
+
+/* Paragraph */
+font-family: "Helvetica Neue LT Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+}
+.headertopsectin{
+    margin: 40px 0;
+}
+/* service faq------------------------------------------------------ */
+
+
+
+
+/* footer------------------------------------------------------------- */
+.footer {
+    background: var(--Lightest-Gray---FA, #FAFAFA);
+}
+
+.footerlogo {
+    max-width: 420px;
+    height: 160px;
+    text-align: end;
+}
+
+.footerrighttext {
+    color: var(--Blackish, #201E1F);
+    text-align: center;
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    text-decoration-line: underline;
+
+
+}
+
+#footerrightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerrightnumber {
+    color: var(--Aqua, #5B95A9);
+    text-align: center;
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+
+}
+
+#footercentersection h4 {
+    color: var(--Blackish, #201E1F);
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
+}
+
+#footercentersection p {
+    color: var(--Blackish, #201E1F);
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 150% */
+}
+
+.copyright {
+    border-top: 1px solid #D9D9D9;
+    display: flex;
+    gap: 24px;
+    align-items: end;
+    justify-content: end;
+}
+
+.footerBottomLink {
+    color: var(--Blackish, #201E1F);
+    text-align: right;
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footerBottomLink:hover {
+    color: var(--Blackish, #201E1F);
+}
+
+.bottomLinkLine {
+    position: relative;
+}
+
+.bottomLinkLine::after {
+    content: "";
+    width: 2px;
+    height: 16px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #201E1F;
+}
+
+.footerleft {
+    background-color: black;
+    color: white;
+    background: #1f1d20;
+    color: #fff;
+    /* max-width:220px; */
+    padding: 20px 12px 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.newsletter-box {
+    background: #1f1d20;
+    color: #fff;
+    /* max-width:220px; */
+    padding: 20px 12px 18px;
+    text-align: center;
+}
+
+.newsletter-box h2 {
+
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 52px; */
+    /* 108.333% */
+    letter-spacing: -0.96px;
+}
+
+.newsletter-box p {
+    color: var(--white, #FFF);
+    text-align: center;
+    /* Paragraph */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.newsletter-form {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input {
+    border-radius: 0;
+    border: none;
+    height: 34px;
+    font-size: 12px;
+    padding-right: 35px;
+}
+
+.newsletter-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 34px;
+    width: 34px;
+    border: none;
+    background: #fff;
+    color: #777;
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #5d8aa8;
+    color: #fff;
+    margin: 0 3px;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.social-icons a:hover {
+    opacity: .85;
+    color: #fff;
+}
+
+.outraperbottomcard {
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: #000;
+    max-width: 800px;
+    height: 590px;
+    align-items: center;
+}
+
+.innerraperbottomcard {
+    max-width: 520px;
+}
+
+.servicetexthead {
+    color: var(--white, #FFF);
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+    display: inline;
+}
+/* footer------------------------------------------------------------- */
