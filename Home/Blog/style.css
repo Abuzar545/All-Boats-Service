@@ -3,6 +3,10 @@
     src: url("../../assets/Home/Fonts/HelveticaNeueLTProBd.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Helvetica Neue LT Prox";
+    src: url("../../assets/Home/Fonts/HelveticaNeueLTProUltLtEx.otf format")("opentype");
+}
 
 * {
     margin: 0;
@@ -10,6 +14,10 @@
     box-sizing: border-box;
 }
 
+
+a {
+    /* text-decoration: none !important; */
+}
 
 /* header */
 
@@ -156,81 +164,20 @@ nav {
 /* Hero sectio ----------- */
 .homesection {
     position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     padding-top: 33%;
 }
 
-.homesection::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    content: "";
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.80) 100%);
-}
-
-
 .homesectionimg {
     position: absolute;
+    width: 100%;
+    height:100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.heroheading {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    color: white;
-    z-index: 2;
-
-}
-
-.heroheadingh1 {
-    color: var(--white, #FFF);
-    text-align: center;
-
-    /* H1 */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 80px;
-    /* 100% */
-    letter-spacing: -1.6px;
-    margin-bottom: 45px;
-}
-
-.homebtn {
-    width: 200px;
-    height: 48px;
-    opacity: 1;
-    border-radius: 24px;
-    background-color: #5B95A9;
-    text-align: center;
-    border: none;
-    color: white;
-    cursor: pointer;
-    color: var(--white, #FFF);
-    text-align: center;
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
 }
 
 .overlay {
     position: relative;
+    overflow: hidden;
 }
 
 .overlay::after {
@@ -240,287 +187,150 @@ nav {
     height: 100%;
     width: 100%;
     content: "";
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.80) 100%);
+    opacity: 0.6;
+    background: var(--Blackish, #201E1F);
 }
 
-/* Hero sectio ----------- */
-/* Best care --------------------------------- */
-.bestcare {
-    background: var(--Lightest-Gray---FA, #FAFAFA);
-
-    padding: 80px 0;
-
-}
-
-.bestcareleft {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;  */
-    /* text-align: center; */
-    justify-content: center;
-    max-width: 100%;
-}
-
-.bestcareleft h2 {
-    color: var(--Blackish, #201E1F);
-
-    /* h2 */
+.heroheadingh1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    color: var(--white, #FFF);
+    text-align: center;
     font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
+    line-height: 80px;
+    /* 100% */
+    letter-spacing: -1.6px;
+    z-index: 2;
 }
 
-.bestcareleft p {
-    color: var(--Blackish, #201E1F);
+/* hero navbar--------------------------------- */
+.navlink2 {
+    width: 100%;
+}
 
-    font-family: "Helvetica Neue LT Pro";
+.navlink-content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Allows items to move to next line */
+}
+
+.centralNavLink2 {
+    color: black;
+    text-decoration: none;
+    font-family: "Helvetica Neue LT Pro", sans-serif;
     font-size: 16px;
-    /* font-style: normal; */
-    font-weight: 300;
-    line-height: 28px;
-    /* 133.333% */
-    letter-spacing: -0.48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+    white-space: nowrap;
 }
 
-.bestcareimg {
+.centralNavLink2:hover {
+    color: #5B95A9;
+    text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .navlink-content2 {
+        gap: 25px;
+    }
+
+    .centralNavLink2 {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .navlink-content2 {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .centralNavLink2 {
+        font-size: 13px;
+    }
+}
+/* hero navbar--------------------------------- */
+
+/* <!-- Events promotion section --> */
+.carddev {
     position: relative;
-    padding-top: 70%;
+    padding-top: 53%;
 }
 
-.bestcareimgitem {
+.cardimg {
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 
-.ourCaretop {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 8% 0;
+.events-promotion {
+    margin: 40px 0 40px 0;
 }
 
-.ourCaretop h2 {
-    color: #000;
-    text-align: center;
-
-    /* h2 */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-}
-
-.ourCaretop p {
-    text-align: center;
+.contentdev h3 {
     color: var(--Blackish, #201E1F);
-    text-align: center;
 
-    /* Paragraph */
+    /* h3 */
     font-family: "Helvetica Neue LT Pro";
-    font-size: 16px;
+    font-size: 32px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-}
-
-.service-text {
-    font-size: 10px;
-    color: #333;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.service-list {
-    padding-left: 20px;
-    margin-bottom: 25px;
-}
-
-.service-list li {
-    margin-bottom: 10px;
-    color: #222;
-    line-height: 1.6;
-}
-
-.service-list strong {
     font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
 }
 
-.service-listbtn2 {
+.contentdevspan {
     color: var(--Aqua, #5B95A9);
 
-    /* Button Text */
+    /* h6 */
     font-family: "Helvetica Neue LT Pro";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
-    /* 125% */
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin: 3%;
-}
-
-
-
-
-.certifiimg img {
-    width: 40px;
-    height: 40px;
-    aspect-ratio: 1/1;
-}
-
-.certifieddev {
-    gap: 20px;
-
-}
-
-.certifitext h5 {
-    color: var(--white, #FFF);
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    /* 133.333% */
-    letter-spacing: -0.48px;
-}
-
-.outrapimg {
-    background-image: url('../../assets/Service/outrapimg.png');
-    width: 100%;
-    /* width: 800px; */
-    height: 590px;
-    position: relative;
-}
-
-.overlay1 {
-    position: relative;
-}
-
-.overlay1::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 590PX;
-    width: 100%;
-    content: "";
-    opacity: 0.75;
-    background: #457586;
-}
-
-.outraperbottomcard1 {
-    display: flex;
-    color: white;
-    justify-content: center;
-    /* background-color: #000; */
-    max-width: 100%;
-    height: 590px;
-    align-items: center;
-}
-.outraperbottomcard{
-      display: flex;
-    color: white;
-    justify-content: center;
-    background-color: #000;
-    max-width: 100%;
-    height: 590px;
-    align-items: center;
-}
-.home {
-    color: var(--white, #FFF);
-    text-align: center;
-
-    /* Button Text */
-    /* font-family: "Helvetica Neue LT Pro"; */
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    /* 125% */
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin: 10px;
-    background: transparent;
-    outline: none;
-    border: none;
-}
-
-.line {
-
-    background: #E6E6E6;
-    height: 3px;
-    width: 100%;
-    margin: 5% 0;
-}
-
-
-
-
-
-
-
-/* Best care --------------------------------- */
-/* request section--------------------- */
-.request-raper {
-   
-    text-align: center;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    gap: 2%;
-    justify-content: center;
-}
-
-.requestheader {
-    color: var(--Blackish, #201E1F);
-    text-align: center;
-
-    /* h2 */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-}
-
-.requestinput {
-    border-radius: 24px;
-    border: 1px solid #D9D9D9;
-    width: 100%;
-    padding: 2% 0 2% 5%;
-}
-
-/* service faq */
-
-
-.headertopsectintext {
-    color: var(--Blackish, #201E1F);
-
-    /* Paragraph */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
 }
+.contentdevp{
+    color: var(--Blackish, #201E1F);
 
-.headertopsectin {
-    margin: 40px 0;
+/* Paragraph */
+/* font-family: "Helvetica Neue LT Pro"; */
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 }
+/* <!-- Events promotion section --> */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -771,7 +581,7 @@ nav {
     }
 }
 
-/* SMALL MOBILE */
+   /* SMALL MOBILE */
 
 
 @media (max-width: 480px) {
@@ -795,7 +605,6 @@ nav {
         height: 36px;
     }
 }
-
 /* footer-------------------------- */
 /* inventry section------------------ */
 .menuinv-rapper {
@@ -943,66 +752,6 @@ nav {
         flex-shrink: 0;
     }
 
-    .heroheadingh1 {
-        font-weight: 400;
-        font-style: 50 Bold;
-        font-size: 50px;
-        leading-trim: NONE;
-        line-height: 50px;
-        padding-bottom: 35px;
-    }
-
-    .homebtn {
-        width: 150px;
-        height: 32px;
-        font-size: 12px;
-        font-weight: 500;
-    }
-
-    .bestcarereposib h2 {
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.76px;
-    }
-
-    .bestcareleft p {
-        font-size: 13px;
-        font-weight: 200;
-        line-height: 133%;
-        letter-spacing: -0.38px;
-    }
-
-    .service-text {
-        font-size: 9px;
-        line-height: 1.0;
-        margin-bottom: 15px;
-    }
-
-    .service-list {
-        padding-left: 18px;
-        margin-bottom: 14px;
-    }
-
-    .service-list li {
-        margin-bottom: 5px;
-        line-height: 1.6;
-    }
-
-    .service-list strong {
-        font-weight: 700;
-    }
-
-    .service-listbtn2 {
-        font-size: 13px;
-        font-weight: 700;
-        line-height: 20px;
-        /* 125% */
-        letter-spacing: 0.8px;
-        text-transform: uppercase;
-        margin-left: 3%;
-    }
-
 }
 
 
@@ -1043,175 +792,54 @@ nav {
         line-height: 20px;
         /* 150% */
     }
-
     .hero-slider h1 {
-        font-size: 2.5rem;
-        font-weight: 500;
-        letter-spacing: -1px;
-    }
-
-    .hero-slider h2 {
-        font-size: 1rem;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        padding-top: 14%;
-        padding-bottom: 7%;
-    }
-
-    .heroheadingh1 {
-        color: var(--white, #FFF);
-        text-align: center;
-
-        /* H1 */
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 80px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 80px;
-        /* 100% */
-        letter-spacing: -1.6px;
-        margin-bottom: 45px;
-    }
-
-    .homebtn {
-        width: 200px;
-        height: 48px;
-        opacity: 1;
-        border-radius: 24px;
-        background-color: #5B95A9;
-        text-align: center;
-        border: none;
-        color: white;
-        cursor: pointer;
-        color: var(--white, #FFF);
-        text-align: center;
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0.8px;
-        text-transform: uppercase;
-    }
-
-    .heroheadingh1 {
-        font-weight: 400;
-        font-style: 50 Bold;
-        font-size: 50px;
-        leading-trim: NONE;
-        line-height: 50px;
-        padding-bottom: 35px;
-    }
-
-    .homebtn {
-        width: 150px;
-        height: 32px;
-        font-size: 12px;
-        font-weight: 500;
-    }
-
-    .heroheadingh1 {
-        font-weight: 400;
-        font-style: 50 Bold;
-        font-size: 50px;
-        leading-trim: NONE;
-        line-height: 50px;
-        padding-bottom: 5px;
-        margin-bottom: 20px;
-    }
-
-    .bestcareleft h2 {
-        color: var(--Blackish, #201E1F);
-
-
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 41px;
-
-        font-weight: 600;
-        line-height: 100%;
-
-        letter-spacing: -0.76px;
-    }
-
-    .bestcareleft p {
-
-        font-size: 14px;
-
-        font-weight: 200;
-        line-height: 133%;
-
-        letter-spacing: -0.38px;
-    }
-
-    .bestcarereposib h2 {
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.76px;
-    }
-
-    .bestcarereposib p {
-        font-size: 13px;
-        font-weight: 200;
-        line-height: 133%;
-        letter-spacing: -0.38px;
-    }
-
-    .service-text {
-        font-size: 9px;
-        line-height: 1.0;
-        margin-bottom: 10px;
-    }
-
-    .service-list {
-        padding-left: 18px;
-        margin-bottom: 14px;
-    }
-
-    .service-list li {
-        margin-bottom: 5px;
-        line-height: 1.6;
-        font-size: 14px;
-    }
-
-    .service-list strong {
-        font-weight: 700;
-    }
-
-    .service-listbtn2 {
-        font-size: 13px;
-        font-weight: 700;
-        line-height: 20px;
-        /* 125% */
-        letter-spacing: 0.8px;
-        text-transform: uppercase;
-        margin-left: 3%;
-    }
-    .choose h2{
-        font-size: 30px;
-    }
-    
-.certifiimg img {
-    width: 30px;
-    height: 30px;
-    aspect-ratio: 1/1;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: -1px;
 }
 
-.certifieddev {
-    gap: 15px;
-
+.hero-slider h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-top: 14%;
+    padding-bottom: 7%;
+}
+.events-promotion {
+    margin: 40px 0 40px 0;
 }
 
-.certifitext h5 {
-    font-size: 20px;
+.contentdev h3 {
+    color: var(--Blackish, #201E1F);
+
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 28px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    /* 133.333% */
-    letter-spacing: -0.58px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
 }
-.certifitextp{
-    font-size: 14px;
+
+.contentdevspan {
+    color: var(--Aqua, #5B95A9);
+
+    /* h6 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
+}
+.contentdevp{
+    color: var(--Blackish, #201E1F);
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
 }
 
 
@@ -1324,119 +952,34 @@ nav {
         line-height: 18px;
         /* 150% */
     }
-
     .care-title {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #111111;
-        line-height: 1.15;
-        letter-spacing: -0.5px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+.care-lead {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.1;
+}
+
+.care-text {
+    font-size: 0.7rem;
+    color: #222222;
+    line-height: 1.6;
+    font-weight: 400;
+}
+  .navlink-content2 {
+        gap: 25px;
     }
 
-    .care-lead {
-        font-size: 1rem;
-        font-weight: 500;
-        color: #111111;
-        line-height: 1.1;
+    .centralNavLink2 {
+        font-size: 14px;
     }
-
-    .care-text {
-        font-size: 0.7rem;
-        color: #222222;
-        line-height: 1.6;
-        font-weight: 400;
-    }
-
-    .heroheadingh1 {
-        font-weight: 300;
-        font-style: 40 Bold;
-        font-size: 35px;
-        leading-trim: NONE;
-        line-height: 30px;
-        padding-bottom: 2px;
-    }
-
-    .homebtn {
-        width: 150px;
-        height: 28px;
-        font-size: 10px;
-        font-weight: 500;
-    }
-
-    .bestcareleft h2 {
-        font-size: 34px;
-
-        font-weight: 500;
-        line-height: 100%;
-
-        letter-spacing: -0.66px;
-    }
-
-    .bestcare {
-        padding: 30px 0;
-    }
-
-    .bestcareleft p {
-
-        font-size: 12px;
-
-        font-family: sans-serif;
-
-        font-weight: 150;
-        line-height: 113%;
-
-        letter-spacing: -0.30px;
-    }
-
-    .bestcarereposib h2 {
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.76px;
-    }
-
-    .bestcarereposib p {
-        font-size: 13px;
-        font-weight: 200;
-        line-height: 133%;
-        letter-spacing: -0.38px;
-    }
-
-    .service-text {
-        font-size: 9px;
-        line-height: 1.0;
-        margin-bottom: 5px;
-    }
-
-    .service-list {
-        padding-left: 12px;
-        margin-bottom: 7px;
-    }
-
-    .service-list li {
-        margin-bottom: 2px;
-        line-height: 1.6;
-        font-size: 11px;
-    }
-
-    .service-list strong {
-        font-weight: 700;
-    }
-
-    .service-listbtn2 {
-        font-size: 11px;
-        font-weight: 700;
-        line-height: 20px;
-        /* 125% */
-        letter-spacing: 0.8px;
-        text-transform: uppercase;
-        margin-left: 1%;
-    }
-    .outraperbottomcard2{
-        height: 400px;
-    }
-
-
 
 }
 
@@ -1517,7 +1060,7 @@ nav {
         width: 18px;
         height: 18px;
     }
-
+    
     .boat-banner {
         width: 100%;
         height: 380px;
@@ -1565,121 +1108,6 @@ nav {
         line-height: 18px;
         /* 150% */
     }
-
-    .heroheadingh1 {
-        font-weight: 250;
-        font-style: 30 Bold;
-        font-size: 30px;
-        leading-trim: NONE;
-        line-height: 30px;
-        padding-bottom: 2px;
-    }
-
-    .homebtn {
-        width: 150px;
-        height: 28px;
-        font-size: 10px;
-        font-weight: 500;
-
-    }
-
-    .homesection {
-        padding-top: 37%;
-    }
-
-    .bestcareleft {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 2px;
-        justify-content: center;
-        max-width: 1000%;
-        margin: 0 auto;
-    }
-
-    .bestcareleft h2 {
-        font-size: 27px;
-
-        font-weight: 400;
-        line-height: 100%;
-
-        letter-spacing: -0.96px;
-    }
-
-    .bestcare {
-        padding: 30px 0;
-    }
-
-    .bestcareleft p {
-
-        font-size: 11px;
-
-        font-family: sans-serif;
-
-        font-weight: 100;
-        line-height: 103%;
-
-        letter-spacing: -0.60px;
-    }
-
-    .bestcarereposib {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        text-align: start;
-        gap: 2px;
-        justify-content: start;
-        max-width: 100%;
-        /* margin: 0 auto; */
-    }
-
-    .bestcarereposib h2 {
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 100%;
-        letter-spacing: -0.76px;
-    }
-
-    .bestcarereposib p {
-        font-size: 13px;
-        font-weight: 200;
-        line-height: 133%;
-        letter-spacing: -0.38px;
-    }
-
-    .service-text {
-        font-size: 9px;
-        line-height: 1.0;
-        margin-bottom: 5px;
-    }
-
-    .service-list {
-        padding-left: 12px;
-        margin-bottom: 7px;
-    }
-
-    .service-list li {
-        margin-bottom: 2px;
-        line-height: 1.6;
-        font-size: 11px;
-    }
-
-    .service-list strong {
-        font-weight: 700;
-    }
-
-    .service-listbtn2 {
-        font-size: 11px;
-        font-weight: 700;
-        line-height: 20px;
-        max-width: 700px;
-        letter-spacing: 0.8px;
-        text-transform: uppercase;
-        margin-left: 0%;
-      
-    }
-
 
 }
 
@@ -1771,7 +1199,7 @@ nav {
         line-height: 18px;
 
     }
-
+    
     .icon-box {
         background-color: #1a1919;
         width: 20%;
@@ -1788,7 +1216,7 @@ nav {
         width: 10px;
         height: 10px;
     }
-
+    
     .boat-banner {
         width: 100%;
         height: 380px;
@@ -1836,152 +1264,72 @@ nav {
         line-height: 14px;
         /* 150% */
     }
-
-    .hero-slider h1 {
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: -1px;
-    }
-
-    .hero-slider h2 {
-        font-size: 0.8rem;
-        font-weight: 300;
-        letter-spacing: 0.5px;
-        padding-top: 14%;
-        padding-bottom: 7%;
-    }
-
-    .care-lead {
-        font-size: 0.9rem;
-        font-weight: 400;
-        color: #111111;
-        line-height: 1.1;
-    }
-
-    .care-text {
-        font-size: 0.7rem;
-        color: #222222;
-        line-height: 1.6;
-        font-weight: 300;
-    }
-
-    .care-title {
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #111111;
-        line-height: 1.15;
-        letter-spacing: -0.5px;
-    }
-
-    .heroheadingh1 {
-        font-weight: 200;
-        font-style: 30 Bold;
-        font-size: 23px;
-        leading-trim: NONE;
-        line-height: 1%;
-        padding-bottom: 7px;
-        margin-bottom: 10px;
-    }
-
-    .homebtn {
-        width: 120px;
-        height: 21px;
-        font-size: 8px;
-        font-weight: 300;
-
-    }
-
-    .homesection {
-        height: 50vh;
-
-    }
-
-    .bestcareleft {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 2px;
-        justify-content: center;
-        max-width: 1000%;
-        margin: 0 auto;
-    }
-
-    .bestcareleft h2 {
-        font-size: 21px;
-
-        font-weight: 400;
-        line-height: 100%;
-
-        letter-spacing: -0.96px;
-    }
-
-    .bestcare {
-        padding: 30px 0;
-    }
-
-    .bestcareleft p {
-
-        font-size: 9px;
-
-        font-family: sans-serif;
-
-        font-weight: 90;
-        line-height: 103%;
-
-        letter-spacing: -0.60px;
-    }
-
-    .bestcarereposib {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        text-align: start;
-        gap: 2px;
-        justify-content: start;
-        max-width: 100%;
-        /* margin: 0 auto; */
-    }
-
-    .service-listbtn2 {
-        font-size: 10px;
-        font-weight: 500;
-        line-height: 10px;
-        max-width: 700px;
-        letter-spacing: 0.1px;
-        text-transform: uppercase;
-        margin-left: 0%;
-    }
- .service-list li {
-        margin-bottom: 1px;
-        line-height: 1.2;
-        font-size: 9px;
-    }
-    .certifiimg img {
-    width: 20px;
-    height: 20px;
-    aspect-ratio: 1/1;
+     .hero-slider h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -1px;
 }
 
-.certifieddev {
-    gap: 3px;
-
+.hero-slider h2 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 14%;
+    padding-bottom: 7%;
+}
+.care-lead {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #111111;
+    line-height: 1.1;
 }
 
-.certifitext h5 {
-    font-size: 14px;
+.care-text {
+    font-size: 0.7rem;
+    color: #222222;
+    line-height: 1.6;
+    font-weight: 300;
+}
+  .care-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+.contentdev h3 {
+    color: var(--Blackish, #201E1F);
+
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 22px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    /* 133.333% */
-    letter-spacing: -0.58px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
 }
-.certifitextp{
-    font-size: 10px;
+
+.contentdevspan {
+    color: var(--Aqua, #5B95A9);
+
+    /* h6 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
 }
-.outraperbottomcard2{
-        height: 350px;
-    }
+.contentdevp{
+    color: var(--Blackish, #201E1F);
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
 
 }
 
@@ -2097,125 +1445,50 @@ nav {
         line-height: 13px;
 
     }
-
-    .hero-slider h1 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        letter-spacing: -1px;
-    }
-
-    .hero-slider h2 {
-        font-size: 0.7rem;
-        font-weight: 300;
-        letter-spacing: 0.5px;
-        padding-top: 14%;
-        padding-bottom: 7%;
-    }
-
-    .heroheadingh1 {
-        font-weight: 200;
-        font-style: 20 Bold;
-        font-size: 18px;
-        leading-trim: NONE;
-        line-height: 1%;
-        padding-bottom: 7px;
-        margin-bottom: 10px;
-    }
-
-    .homebtn {
-        width: 110px;
-        height: 18px;
-        font-size: 7px;
-        font-weight: 300;
-
-    }
-
-    .heroheading {
-        top: 50%;
-    }
-
-    .bestcareleft {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 2px;
-        justify-content: center;
-        max-width: 1000%;
-        margin: 0 auto;
-    }
-
-    .bestcareleft h2 {
-        font-size: 17px;
-
-        font-weight: 400;
-        line-height: 100%;
-
-        letter-spacing: -0.96px;
-    }
-
-    .bestcare {
-        padding: 30px 0;
-    }
-
-    .bestcareleft p {
-
-        font-size: 9px;
-
-        font-family: sans-serif;
-
-        font-weight: 90;
-        line-height: 103%;
-
-
-    }
-
-    .bestcarereposib {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        text-align: start;
-        gap: 2px;
-        justify-content: start;
-        max-width: 100%;
-        /* margin: 0 auto; */
-    }
-
-    .service-listbtn2 {
-        font-size: 7px;
-        font-weight: 500;
-        line-height: 10px;
-        max-width: 700px;
-        letter-spacing: 0.1px;
-        text-transform: uppercase;
-        margin-left: 0%;
-    }
-    .service-list li {
-        margin-bottom: 1px;
-        line-height: 1.2;
-        font-size: 9px;
-    }
-  .certifiimg img {
-    width: 16px;
-    height: 16px;
-    aspect-ratio: 1/1;
+     .hero-slider h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
 }
 
-.certifieddev {
-    gap: 1px;
-
+.hero-slider h2 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 14%;
+    padding-bottom: 7%;
 }
+.contentdev h3 {
+    color: var(--Blackish, #201E1F);
 
-.certifitext h5 {
-    font-size: 11px;
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 19px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
-    /* 133.333% */
-    letter-spacing: -0.68px;
+    line-height: 16px;
+    /* 112.5% */
+    letter-spacing: -0.94px;
 }
-.certifitextp{
-    font-size: 8px;
+
+.contentdevspan {
+    color: var(--Aqua, #5B95A9);
+
+    /* h6 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
+}
+.contentdevp{
+    color: var(--Blackish, #201E1F);
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 14px; /* 150% */
 }
 
 }

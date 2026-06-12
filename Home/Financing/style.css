@@ -3,10 +3,6 @@
     src: url("../../assets/Home/Fonts/HelveticaNeueLTProBd.otf") format("opentype");
 }
 
-@font-face {
-    font-family: "Helvetica Neue LT Prox";
-    src: url("../../assets/Home/Fonts/HelveticaNeueLTProUltLtEx.otf format")("opentype");
-}
 
 * {
     margin: 0;
@@ -14,10 +10,6 @@
     box-sizing: border-box;
 }
 
-
-a {
-    text-decoration: none !important;
-}
 
 /* header */
 
@@ -79,7 +71,7 @@ nav {
     position: absolute;
     left: 50%;
     top: 6px;
-    transform: translateX(-50px);
+    transform: translateX(-70px);
 }
 
 .navlogoitem {
@@ -199,198 +191,24 @@ nav {
     }
 }
 
+
 /* Hero sectio ----------- */
 .homesection {
+    position: relative;
+    padding-top: 37%;
+}
+
+.heroimg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-   max-height: 800px;   
-    top: 80px;
-    /* angle: 0 deg; */
-    /* opacity: 1; */
-    background-color: #c4c4c4;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-.homesectionimg{
-    width: 100%;
-}
-/* sell Trade section ---------------- */
-.sell-trade{
-    margin: 40px 0;
-}
-.sellrightheading{
-    color: var(--Blackish, #201E1F);
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.sellleftcontent p{
-color: var(--Blackish, #201E1F);
-
-/* Paragraph */
-font-family: "Helvetica Neue LT Pro";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-margin-bottom: 40px;
-}
-/* sell Trade section ---------------- */
-/* All bosts section --------------------- */
-.AllBoatsection{
-    background: var(--Lightest-Gray---FA, #FAFAFA);
-    padding: 70px 0;
-}
-.allBoatsHeading{
-    max-width: 620px;
-    margin-bottom: 64px;
-}
-.rightheadingitem{
-        color: var(--Blackish, #201E1F);
-text-align: center;
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.iconback{
-    background-color: #5B95A9;
-    border-radius: 8px;
-background: var(--Aqua, #5B95A9);
-display: flex;
-width: 48px;
-height: 48px;
-justify-content: center;
-align-items: center;    
-}
-.allboatcontentreper{
-    display: flex;
-    gap: 24px;
-}
-.iconcontenth3{
-    color: var(--Blackish, #201E1F);
-
-/* h3 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px; /* 112.5% */
-letter-spacing: -0.64px;
-}
-.iconcontent{
-    max-width: 400px;
-}
-/* All bosts section --------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Advantage */
-.Advantagesection {
-    /* background-color: ; */
-    background: var(--Lightest-Gray---FA, #FAFAFA);
+    height: 100%;
 }
 
-.bestcareleft {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;  */
-    justify-content: center;
-    max-width: 600px;
-}
 
-.bestcareleft h2 {
-    /* color: var(--Blackish, #201E1F); */
 
-    /* h2 */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-}
 
-.bestcareleft p {
-    /* color: var(--Blackish, #201E1F); */
-
-    font-family: "Helvetica Neue LT Proex";
-    font-size: 16px;
-    /* font-style: normal; */
-    font-weight: 300;
-    line-height: 28px;
-    /* 133.333% */
-    letter-spacing: -0.48px;
-}
-
-.service-list {
-    margin-left: 10px;
-}
-
-/* authorize section */
-.authorize {
-    padding: 80px 0;
-}
-
-.authorizetop {
-    max-width: 880px;
-    text-align: center;
-}
-
-.authorizetoph2 {
-    color: #000;
-    text-align: center;
-
-    /* h2 */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-    padding-bottom: 24px;
-}
 
 .homebtn {
     width: 200px;
@@ -412,20 +230,120 @@ letter-spacing: -0.64px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
-/* Submit section-------------------------- */
-.request-raper {
-    max-width: 520px;
-    text-align: center;
+
+
+/* Hero section ----------- */
+
+/* Best care --------------------------------- */
+.bestcare {
+    background: var(--Lightest-Gray---FA, #FAFAFA);
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    gap: 15px;
-    /* text-align: center; */
     justify-content: center;
+    max-width: 1720px;
+    height: 640px;
+    align-items: center;
 }
 
-.requestheader {
+.bestcareleft {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+    justify-content: center;
+    width: 80%;
+}
+
+.bestcareleft h2 {
     color: var(--Blackish, #201E1F);
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+}
+
+.bestcareleft h3 {
+    color: var(--Aqua, #5B95A9);
+
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+}
+
+.paradev {
+    margin: 20px 0;
+}
+
+.bestcareleft p {
+    color: var(--Blackish, #201E1F);
+
+    /* font-family: "Helvetica Neue LT Pro"; */
+    font-size: 16px;
+    /* font-style: normal; */
+    font-weight: 400;
+    line-height: 28px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+.bestcareimg {
+    position: relative;
+    padding-top: 83%;
+    margin-top: 100px;
+    margin: 0 auto;
+
+}
+
+.bestcareimgitem {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    /* margin-left: 120px; */
+}
+
+.lastdevh3 {
+    color: var(--Blackish, #201E1F);
+
+    /* h5 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+
+.lastdevh3 {
+    position: relative;
+}
+
+.lastdevh3::before {
+    position: absolute;
+    left: -19px;
+    top: 0;
+    height: 100%;
+    background-color: #5B95A9;
+    content: "";
+    padding: 1px;
+
+
+}
+
+
+.heroheadingh2 {
+    color: #FFF;
     text-align: center;
 
     /* h2 */
@@ -437,16 +355,233 @@ letter-spacing: -0.64px;
     /* 108.333% */
     letter-spacing: -0.96px;
 }
-.requestinput{
+
+.heroheadingh5 {
+    color: #FFF;
+    text-align: center;
+
+    /* h5 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    background: var(--dark-aqua, #457586);
+}
+
+.hello {
+    margin-top: 80px;
+}
+
+.sectionmargen {
+    margin: 70px 0;
+}
+
+/* review section-------------------------------- */
+
+.iconback {
+    background-color: #5B95A9;
+    border-radius: 24px;
+    background: var(--Aqua, #5B95A9);
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+}
+
+.allboatcontentreper {
+    display: flex;
+    gap: 24px;
+}
+
+.iconcontenth3 {
+    color: var(--Blackish, #201E1F);
+
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+}
+
+.iconcontent {
+    max-width: 400px;
+}
+
+/* review section-------------------------------- */
+/* industry section-------------------------- */
+.industry {
+    background: var(--dark-aqua, #457586);
+    padding: 100px 0;
+}
+
+.industryleft {
+    color: #FFF;
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+}
+
+.industryrighthead {
+    color: #FFF;
+
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+}
+
+.industryrightp {
+    color: #FFF;
+
+    /* h5 */
+    /* font-family: "Helvetica Neue LT Pro"; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+/* industry section-------------------------- */
+/* payment section----------------------- */
+.payment {
+    background-image: url(../../assets/Financing/paymentbackimg.png);
+    padding: 5% 0 7% 0;
+    z-index: -2;
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay::after {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    opacity: 0.85;
+    background: var(--Blackish, #201E1F);
+    z-index: -1;
+}
+
+.payemntleft {
+    color: var(--white, #FFF);
+
+    /* H1 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1.0px;
+
+}
+.paymentcalculater{
+    background-color: white;
+    padding: 60px 20px;
+    margin-left: 10%;
+}
+
+/* payment section----------------------- */
+/* request section--------------------- */
+.request-raper {
+    max-width: 520px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+    /* text-align: center; */
+    justify-content: center;
+   
+}
+
+.requestheader {
+    color: var(--Blackish, #201E1F);
+text-align: center;
+
+/* h3 */
+font-family: "Helvetica Neue LT Pro";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 112.5% */
+letter-spacing: -0.64px;
+}
+
+.requestinput {
     border-radius: 24px;
     border: 1px solid #D9D9D9;
     width: 100%;
-    padding: 10px 0 7px 5% ;
+    padding: 10px 0 7px 5%;
 }
-.submit{
-    margin: 4% 0 5% 0;
+
+/* service faq */
+.headertopsectinheader {
+    color: var(--Blackish, #201E1F);
+    text-align: center;
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+
 }
-/* Submit section-------------------------- */
+
+.headertopsectintext {
+    color: var(--Blackish, #201E1F);
+
+    /* Paragraph */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.headertopsectin {
+    margin: 40px 0;
+}
 
 
 /* footer------------------------------------------------------------- */
@@ -665,4 +800,5 @@ letter-spacing: -0.64px;
     letter-spacing: -0.48px;
     display: inline;
 }
+
 /* footer------------------------------------------------------------- */

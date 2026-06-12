@@ -19,7 +19,7 @@ a {
     text-decoration: none !important;
 }
 
-/* header */
+/* header----------------------------------------------- */
 
 nav {
     position: sticky;
@@ -199,187 +199,57 @@ nav {
     }
 }
 
-/* Hero sectio ----------- */
-.homesection {
-    width: 100%;
-   max-height: 800px;   
-    top: 80px;
-    /* angle: 0 deg; */
-    /* opacity: 1; */
-    background-color: #c4c4c4;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-.homesectionimg{
-    width: 100%;
-}
-/* sell Trade section ---------------- */
-.sell-trade{
-    margin: 40px 0;
-}
-.sellrightheading{
-    color: var(--Blackish, #201E1F);
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.sellleftcontent p{
-color: var(--Blackish, #201E1F);
-
-/* Paragraph */
-font-family: "Helvetica Neue LT Pro";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-margin-bottom: 40px;
-}
-/* sell Trade section ---------------- */
-/* All bosts section --------------------- */
-.AllBoatsection{
-    background: var(--Lightest-Gray---FA, #FAFAFA);
-    padding: 70px 0;
-}
-.allBoatsHeading{
-    max-width: 620px;
-    margin-bottom: 64px;
-}
-.rightheadingitem{
-        color: var(--Blackish, #201E1F);
-text-align: center;
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.iconback{
-    background-color: #5B95A9;
-    border-radius: 8px;
-background: var(--Aqua, #5B95A9);
-display: flex;
-width: 48px;
-height: 48px;
-justify-content: center;
-align-items: center;    
-}
-.allboatcontentreper{
-    display: flex;
-    gap: 24px;
-}
-.iconcontenth3{
-    color: var(--Blackish, #201E1F);
-
-/* h3 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px; /* 112.5% */
-letter-spacing: -0.64px;
-}
-.iconcontent{
-    max-width: 400px;
-}
-/* All bosts section --------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Advantage */
-.Advantagesection {
-    /* background-color: ; */
-    background: var(--Lightest-Gray---FA, #FAFAFA);
+/* nav bar ---------------------------------------------------------- */
+.topa {
+    margin: 30px 0;
 }
 
-.bestcareleft {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;  */
-    justify-content: center;
-    max-width: 600px;
+.topa a {
+    color: rgba(34, 34, 34, 0.60);
 }
 
-.bestcareleft h2 {
-    /* color: var(--Blackish, #201E1F); */
+/* leftside card----------------------------------- */
+.filterdev {
+    background-color: #000;
+    padding: 4px 0 5px 20px;
+}
 
-    /* h2 */
+.filterdev h5 {
+    color: var(--white, #FFF);
+
+    /* h5 */
     font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-}
-
-.bestcareleft p {
-    /* color: var(--Blackish, #201E1F); */
-
-    font-family: "Helvetica Neue LT Proex";
-    font-size: 16px;
-    /* font-style: normal; */
-    font-weight: 300;
-    line-height: 28px;
+    font-weight: 500;
+    line-height: 32px;
     /* 133.333% */
     letter-spacing: -0.48px;
 }
 
-.service-list {
-    margin-left: 10px;
+.rightsidecared-outraper {
+    border: 1px solid #D9D9D9;
+    margin: 10px 0;
 }
 
-/* authorize section */
-.authorize {
-    padding: 80px 0;
+.type-dev {
+    padding: 4px 18px 5px 20px;
 }
 
-.authorizetop {
-    max-width: 880px;
-    text-align: center;
+.typetext p {
+    color: var(--Blackish, #201E1F);
+
+    /* Paragraph */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 150% */
 }
 
-.authorizetoph2 {
-    color: #000;
-    text-align: center;
+.rightheadboat {
+    color: var(--Blackish, #201E1F);
 
     /* h2 */
     font-family: "Helvetica Neue LT Pro";
@@ -389,66 +259,319 @@ letter-spacing: -0.64px;
     line-height: 52px;
     /* 108.333% */
     letter-spacing: -0.96px;
-    padding-bottom: 24px;
 }
 
-.homebtn {
+.rightheadp {
+    color: var(--Blackish, #201E1F);
+
+    /* Paragraph */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+.conditiondev {
+    padding: 4px 0 5px 20px;
+    background: rgba(217, 217, 217, 0.20);
+}
+
+.filter-card {
     width: 200px;
-    height: 48px;
-    opacity: 1;
-    border-radius: 24px;
-    background-color: #5B95A9;
-    text-align: center;
-    border: none;
-    color: white;
+    border: 1px solid #d6d6d6;
+    background: #f5f5f5;
+}
+
+.filter-header {
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+}
+
+.filter-body {
+    padding: 10px 12px;
+}
+
+.custom-control {
+    margin-bottom: 10px;
+}
+
+.custom-control-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.toggle-icon {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
     cursor: pointer;
+}
+
+.filter-card {
+    width: 310px;
+    border: 1px solid #d8d8d8;
+    background: #f5f5f5;
+}
+
+.filter-header {
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-body {
+    padding: 20px;
+}
+
+/* Range Slider */
+.range-slider {
+    position: relative;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.range-track {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.range-fill {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 120px;
+    height: 10px;
+    background: #77a8bc;
+    border-radius: 20px;
+}
+
+.range-thumb {
+    position: absolute;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: #222;
+    border-radius: 50%;
+}
+
+.thumb-left {
+    left: 0;
+}
+
+.thumb-right {
+    left: 110px;
+}
+
+.range-value {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.min-max-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.min-max-row input {
+    width: 100px;
+    height: 42px;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 0 14px;
+    font-size: 16px;
+    background: #fff;
+}
+
+.separator {
+    margin: 0 12px;
+    font-size: 22px;
+    color: #555;
+}
+
+/* left side card----------------------------------- */
+/* right side of card----------------------------------- */
+.toolbar {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    width: 280px;
+    position: relative;
+}
+
+.search-box .form-control {
+    padding-left: 35px;
+    border-radius: 0;
+}
+
+.search-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.sort-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    background: #fff;
+}
+
+.sort-label {
+    padding: 6px 12px;
+    font-weight: 600;
+    border-right: 1px solid #ced4da;
+    white-space: nowrap;
+}
+
+.sort-select {
+    border: none;
+    border-radius: 0;
+    min-width: 180px;
+}
+
+.sort-select:focus {
+    box-shadow: none;
+}
+
+.view-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.view-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ced4da;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background: var(--Aqua, #5B95A9)
+}
+
+.view-btn.active {
+    background: #f8f9fa;
+}
+
+.cardbackcolor {
+    background-color: #c4c4c4;
+    width: 100%;
+    height: 292.25px;
+    position: relative;
+}
+
+.custom-divider {
+    border-top: 1px solid #e2e2e2;
+    margin: 16px 0;
+}
+
+.vertical-separator {
+    color: #cccccc;
+    margin: 0 10px;
+    font-weight: 300;
+}
+
+.spec-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #444444;
+    font-size: 0.95rem;
+}
+
+
+.spec-item .bi {
+    color: #777777;
+    font-size: 1.05rem;
+}
+
+.circle-icon {
+    border: 1px solid #777777;
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 0.75rem !important;
+}
+
+.arrivel {
+    width: 160px;
+    height: 35.885px;
+    border-radius: 3px;
+    background: var(--Aqua, #5B95A9);
+    align-items: end;
+    text-align: center;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+.arrivelbtn {
     color: var(--white, #FFF);
     text-align: center;
+
+    /* Button Text */
     font-family: "Helvetica Neue LT Pro";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
+    /* 125% */
     letter-spacing: 0.8px;
     text-transform: uppercase;
-}
-/* Submit section-------------------------- */
-.request-raper {
-    max-width: 520px;
-    text-align: center;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    gap: 15px;
-    /* text-align: center; */
-    justify-content: center;
+    background: transparent;
+    border: none;
+    margin: auto 0;
 }
 
-.requestheader {
+.contact-us {
+    text-align: center;
+}
+
+.contact-us p {
     color: var(--Blackish, #201E1F);
     text-align: center;
 
-    /* h2 */
+    /* Paragraph */
     font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
 }
-.requestinput{
-    border-radius: 24px;
-    border: 1px solid #D9D9D9;
-    width: 100%;
-    padding: 10px 0 7px 5% ;
-}
-.submit{
-    margin: 4% 0 5% 0;
-}
-/* Submit section-------------------------- */
 
-
+/* right side of card----------------------------------- */
 /* footer------------------------------------------------------------- */
 .footer {
     background: var(--Lightest-Gray---FA, #FAFAFA);
@@ -665,4 +788,5 @@ letter-spacing: -0.64px;
     letter-spacing: -0.48px;
     display: inline;
 }
+
 /* footer------------------------------------------------------------- */

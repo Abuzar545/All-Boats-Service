@@ -11,7 +11,7 @@
 }
 
 
-a{
+a {
     text-decoration: none !important;
 }
 
@@ -20,7 +20,7 @@ a{
 nav {
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 10000;
 }
 
 .full-Header {
@@ -28,13 +28,11 @@ nav {
     height: 80px;
     background-color: #000;
     color: #fff;
-    box-shadow: 0 8px 20px -10px rgba(0, 0, 0, 0.25);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 1% 10%;
+    padding: 1% 9%;
 }
 
 
@@ -123,7 +121,13 @@ nav {
 }
 
 
+.mobile-manu-icon {
+    display: none;
+}
 
+#toggle_search_box-icon {
+    font-size: 30px;
+}
 
 #toggle_search_box {
     background: transparent;
@@ -134,75 +138,32 @@ nav {
 
 }
 
-
-
-
-
-@media (max-width: 1200px) {
-    .navlogoitem {
-        width: 150px;
-    }
-
-    .navlink-content {
-        gap: 20px;
-    }
+.mobile-menu-items {
+    display: none;
 }
 
-@media (max-width: 992px) {
-    .full-Header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
 
-    .navlink,
-    .navrightside {
-        flex: unset;
-        width: 100%;
-    }
 
-    .navlink-content {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+.mobile-manu-icon {
+    display: inline;
+    font-size: 25px;
+    padding-left: 4%;
 
-    .navrightside {
-        justify-content: center;
-    }
-
-    .header-location-box {
-        align-items: center;
-    }
 }
 
-@media (max-width: 768px) {
-    .full-Header {
-        padding: 15px;
-    }
-
-    .navlink-content {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .navrightside {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .navlogoitem {
-        width: 130px;
-    }
+#mobile-manu-icon-item {
+    font-size: 40px;
 }
 
+/* footer------------------ */
 /* Home section------------------------------------------- */
 .homesection {
     width: 100%;
-    height: 800px;
-    top: 80px;
+    height: 75vh;
+    /* top: 80%; */
     /* angle: 0 deg; */
     opacity: 1;
-    background-color: #c4c4c4;
+    background: #C4C4C4;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -230,7 +191,7 @@ nav {
     line-height: 80px;
     letter-spacing: -2%;
     text-align: center;
-
+    padding-bottom: 48px;
 }
 
 .homebtn {
@@ -257,6 +218,8 @@ nav {
 /* Arrival section ----------------------------------------------------------------*/
 .herotopimg {
     position: relative;
+    align-items: center;
+    text-align: center;
 }
 
 .homeHeroSection {
@@ -266,9 +229,10 @@ nav {
 #herobtn {
     position: absolute;
     bottom: 15%;
-    transform: translateX(-50px);
-    left: 30%;
+    transform: translateX(-50px, );
+    /* left: 50%; */
     text-align: center;
+    width: 100%;
     z-index: 2;
 }
 
@@ -404,7 +368,7 @@ nav {
     width: 100%;
     max-width: 720px;
     height: 680px;
-    margin: 20% auto;
+    margin-top: 18%;
     border-radius: 4px;
     overflow: hidden;
 
@@ -492,7 +456,7 @@ nav {
 
 .hero-slider .slide-item {
     height: 80vh;
-    min-height: 500px;
+    min-height: 320px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -628,215 +592,1053 @@ nav {
 }
 
 
-.btn-more-about {
-    background-color: #6193a6;
-    color: #ffffff !important;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 32px;
-    font-size: 0.85rem;
+/* footer--------- */
+/* ==========================
+   FOOTER
+========================== */
+
+.footer {
+    background: #fafafa;
+}
+
+/* ==========================
+   LEFT SECTION
+========================== */
+
+#footerrightside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerlogo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footerlogo img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.footerrighttext {
+    text-align: center;
+}
+
+.footerrighttext p {
+    color: #201e1f;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.footerrightnumber h3 {
+    color: #5B95A9;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ==========================
+   CENTER LINKS
+========================== */
+
+.footercentersection h4 {
+    color: #201e1f;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: none;
+    margin-bottom: 15px;
 }
 
-.btn-more-about:hover {
-    background-color: #4c7788;
+.footercentersection p {
+    color: #201e1f;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+.copyright {
+    border-top: 1px solid #d9d9d9;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footerBottomLink {
+    color: #201e1f;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-    /* footer------------------------------------------------------------- */
-    .footer {
-        background: var(--Lightest-Gray---FA, #FAFAFA);
-    }
+.footerBottomLink:hover {
+    color: #201e1f;
+}
 
-    .footerlogo {
-        max-width: 420px;
-        height: 160px;
-        text-align: end;
-    }
+.bottomLinkLine {
+    position: relative;
+}
 
-    .footerrighttext {
-        color: var(--Blackish, #201E1F);
-        text-align: center;
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        /* 150% */
-        text-decoration-line: underline;
+.bottomLinkLine::after {
+    content: "";
+    width: 1px;
+    height: 16px;
+    background: #201e1f;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+/* ==========================
+   NEWSLETTER
+========================== */
 
-    }
+.footerleft {
+    background: #1f1d20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
 
-    #footerrightside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+.newsletter-box {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
 
-    .footerrightnumber {
-        color: var(--Aqua, #5B95A9);
-        text-align: center;
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 36px;
-        /* 112.5% */
-        letter-spacing: -0.64px;
+.newsletter-box h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-    }
+.newsletter-box p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
 
-    #footercentersection h4 {
-        color: var(--Blackish, #201E1F);
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px;
-        /* 150% */
-        text-transform: uppercase;
-    }
+.newsletter-form {
+    position: relative;
+    margin-bottom: 25px;
+}
 
-    #footercentersection p {
-        color: var(--Blackish, #201E1F);
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-        /* 150% */
+.newsletter-form input {
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    padding-right: 60px;
+}
+
+.newsletter-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: white;
+    color: #555;
+}
+
+/* ==========================
+   SOCIAL ICONS
+========================== */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #5B95A9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 991px) {
+
+    .footerleft {
+        margin-top: 30px;
     }
 
     .copyright {
-        border-top: 1px solid #D9D9D9;
-        display: flex;
-        gap: 24px;
-        align-items: end;
-        justify-content: end;
-    }
-
-    .footerBottomLink {
-        color: var(--Blackish, #201E1F);
-        text-align: right;
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-    }
-
-    .footerBottomLink:hover{
-        color: var(--Blackish, #201E1F);
-    }
-
-    .bottomLinkLine{
-        position: relative;
-    }
-
-    .bottomLinkLine::after{
-        content: "";
-        width: 2px;
-        height: 16px;
-        position: absolute;
-        left: -12px;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #201E1F;
-    }
-
-    .footerleft {
-        background-color: black;
-        color: white;
-        background: #1f1d20;
-        color: #fff;
-        /* max-width:220px; */
-        padding: 20px 12px 18px;
-        text-align: center;
-        display: flex;
         justify-content: center;
-        align-items: center;
-
+        text-align: center;
     }
 
-    .newsletter-box {
-        background: #1f1d20;
-        color: #fff;
-        /* max-width:220px; */
-        padding: 20px 12px 18px;
+    .footercentersection {
+        text-align: center;
+    }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 767px) {
+
+    .footer {
         text-align: center;
     }
 
     .newsletter-box h2 {
-
-        color: var(--white, #FFF);
-        text-align: center;
-        font-family: "Helvetica Neue LT Pro";
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        /* line-height: 52px; */
-        /* 108.333% */
-        letter-spacing: -0.96px;
+        font-size: 34px;
     }
 
-    .newsletter-box p {
+    .footerrightnumber h3 {
+        font-size: 24px;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .bottomLinkLine::after {
+        display: none;
+    }
+
+    .footercentersection {
+        margin-bottom: 25px;
+    }
+}
+
+   /* SMALL MOBILE */
+
+
+@media (max-width: 480px) {
+
+    .newsletter-box h2 {
+        font-size: 28px;
+    }
+
+    .newsletter-box p,
+    .footercentersection p,
+    .footerrighttext p {
+        font-size: 14px;
+    }
+
+    .footerrightnumber h3 {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        width: 36px;
+        height: 36px;
+    }
+}
+/* footer-------------------------- */
+/* inventry section------------------ */
+.menuinv-rapper {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+
+}
+
+.invmenua h5 {
+    color: var(--Blackish, #201E1F);
+
+    /* h5 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+.invimgrapper {
+    position: relative;
+    padding-top: 60%;
+
+}
+
+.invimg {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.invimgtext {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+    z-index: 500;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+/* inventry section------------------ */
+/* service menu rapper-------------------------- */
+.service-menu-rapper {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    padding: 40px 0 50px 0;
+    background-color: white;
+}
+
+/* service menu rapper-------------------------- */
+/* menu-resource------------------------------- */
+.ser-menu-raper {
+    display: flex;
+    max-width: 240px;
+    max-height: 264px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    background-color: white;
+
+}
+
+.ser-menu-p {
+    color: var(--Blackish, #201E1F);
+
+    /* Paragraph */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+
+}
+
+/* menu-resource------------------------------- */
+
+@media (max-width : 1320px) {
+    .navlogoitem {
+        width: 150px;
+    }
+
+    .navlink-content {
+        gap: 20px;
+    }
+
+    .full-Header {
+        padding: 1% 7%;
+
+    }
+
+    .centralNavLink {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .selectedStoreName {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .herotext {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    .homebtn {
+        width: 150px;
+        height: 38px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .icon-box {
+        background-color: #1a1919;
+        width: 20%;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        flex-shrink: 0;
+    }
+
+}
+
+
+
+@media (max-width: 1140px) {
+    .full-Header {
+        padding: 1% 4%;
+        height: 75px;
+
+    }
+
+    .boat-banner {
+        width: 100%;
+
+        height: 580px;
+        margin-top: 0%;
+
+    }
+
+    .news-title {
+
+        color: var(--Blackish, #201E1F);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        /* 112.5% */
+        letter-spacing: -0.64px;
+    }
+
+    .news-subtitle {
+        color: var(--Blackish, #201E1F);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 150% */
+    }
+    .hero-slider h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.hero-slider h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-top: 14%;
+    padding-bottom: 7%;
+}
+
+
+}
+
+@media (max-width: 992px) {
+    .full-Header {
+        height: 70px;
+        padding: 1% 3%;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .mobile-menu-items {
+        display: flex;
+        max-width: 220px;
+        max-height: 264px;
+        padding: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        /* display: none; */
+        background-color: white;
+        display: none;
+    }
+
+    .heroheadingh1 {
+        font-weight: 500;
+        font-style: 55 Bold;
+        font-size: 60px;
+        leading-trim: NONE;
+        line-height: 60px;
+        padding-bottom: 40px;
+    }
+
+    .homebtn {
+        width: 160px;
+        height: 38px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .herotext {
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    .heroimgitem {
+        height: 530px;
+    }
+
+    .cardbackcolor {
+        background-color: #c4c4c4;
+        width: 100%;
+        /* height: 212.25px; */
+    }
+
+    .boat-banner {
+        width: 100%;
+        height: 380px;
+        margin-top: 0%;
+
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        line-height: 1;
+        font-family: "Helvetica Neue LT Pro";
+    }
+
+    .banner-text {
         color: var(--white, #FFF);
         text-align: center;
         /* Paragraph */
         font-family: "Helvetica Neue LT Pro";
-        font-size: 16px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+
+    }
+
+    .news-title {
+
+        color: var(--Blackish, #201E1F);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 23px;
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
+        /* 112.5% */
+        letter-spacing: -0.64px;
+    }
+
+    .news-subtitle {
+        color: var(--Blackish, #201E1F);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        /* 150% */
+    }
+    .care-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+.care-lead {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 1.1;
+}
+
+.care-text {
+    font-size: 0.7rem;
+    color: #222222;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+}
+
+@media (max-width: 768px) {
+    .full-Header {
+        padding: 15px;
+        height: 60px;
+    }
+
+    .mobile-menu-items {
+        padding: 20px;
+        width: 50%;
+    }
+
+    .navlogoitem {
+        width: 130px;
+    }
+
+    .header-location-box {
+        display: none;
+    }
+
+    #toggle_search_box-icon {
+        font-size: 25px;
+    }
+
+    .heroheadingh1 {
+        font-weight: 400;
+        font-style: 40 Bold;
+        font-size: 45px;
+        leading-trim: NONE;
+        line-height: 40px;
+        padding-bottom: 33px;
+    }
+
+    .homebtn {
+        width: 130px;
+        height: 30px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .heroimgitem {
+        height: 400px;
+    }
+
+    .herotext {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    .arrevalhead {
+        margin-top: 60px;
+    }
+
+    .boat-banner {
+        width: 100%;
+        height: 380px;
+        margin-top: 0%;
+
+    }
+
+    .icon-box {
+        background-color: #1a1919;
+        width: 20%;
+        height: 33px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        flex-shrink: 0;
+    }
+
+    .icon-box-img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .boat-banner {
+        width: 100%;
+        height: 380px;
+        margin-top: 0%;
+
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        line-height: 1;
+        font-family: "Helvetica Neue LT Pro";
+    }
+
+    .banner-text {
+        color: var(--white, #FFF);
+        text-align: center;
+        /* Paragraph */
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+
+    }
+
+    .news-title {
+
+        color: var(--Blackish, #201E1F);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        /* 112.5% */
+        letter-spacing: -0.64px;
+    }
+
+    .news-subtitle {
+        color: var(--Blackish, #201E1F);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
         /* 150% */
     }
 
-    .newsletter-form {
-        position: relative;
-        margin-bottom: 20px;
+}
+
+@media (max-width: 570px) {
+    .full-Header {
+        padding: 1% 2%;
+        height: 50px;
     }
 
-    .newsletter-form input {
-        border-radius: 0;
-        border: none;
-        height: 34px;
+    .navlogoitem {
+        width: 100px;
+    }
+
+    .mobile-menu-items {
+        max-width: 180px;
+    }
+
+    #toggle_search_box-icon {
+        font-size: 18px;
+    }
+
+    .heroheadingh1 {
+        font-weight: 300;
+        font-style: 30 Bold;
+        font-size: 35px;
+        leading-trim: NONE;
+        line-height: 35px;
+        padding-bottom: 10px;
+    }
+
+    .homebtn {
+        width: 105px;
+        height: 25px;
+        font-size: 9px;
+        font-weight: 300;
+    }
+
+    #mobile-manu-icon-item {
+        font-size: 30px;
+    }
+
+    #home-btn-bottom {
+        width: 115px;
+        height: 25px;
+        font-size: 9px;
+        font-weight: 300;
+    }
+
+    .heroimgitem {
+        height: 320px;
+    }
+
+    .backgroundimg {
+        height: 130px;
+    }
+
+    .herotext {
+        color: var(--white, #FFF);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    .arrevalhead {
+        margin-top: 40px;
+    }
+
+    .slidertoptext {
+        font-size: 10px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        line-height: 1;
+        font-family: "Helvetica Neue LT Pro";
+    }
+
+    .banner-text {
+        color: var(--white, #FFF);
+        text-align: center;
+        /* Paragraph */
+        font-family: "Helvetica Neue LT Pro";
         font-size: 12px;
-        padding-right: 35px;
-    }
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
 
-    .newsletter-form button {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 34px;
-        width: 34px;
-        border: none;
-        background: #fff;
-        color: #777;
     }
-
-    .social-icons a {
-        width: 28px;
-        height: 28px;
-        display: inline-flex;
+    
+    .icon-box {
+        background-color: #1a1919;
+        width: 20%;
+        height: 20px;
+        border-radius: 6px;
+        display: flex;
         align-items: center;
         justify-content: center;
-        background: #5d8aa8;
-        color: #fff;
-        margin: 0 3px;
-        text-decoration: none;
-        font-size: 11px;
+        color: #ffffff;
+        flex-shrink: 0;
     }
 
-    .social-icons a:hover {
-        opacity: .85;
-        color: #fff;
+    .icon-box-img {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .boat-banner {
+        width: 100%;
+        height: 380px;
+        margin-top: 0%;
+
     }
 
-    /* footer------------------------------------------------------------- */
+    .banner-title {
+        font-size: 2rem;
+        letter-spacing: -1px;
+        line-height: 1;
+        font-family: "Helvetica Neue LT Pro";
+    }
+
+    .banner-text {
+        color: var(--white, #FFF);
+        text-align: center;
+        /* Paragraph */
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+
+    }
+
+    .news-title {
+
+        color: var(--Blackish, #201E1F);
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px;
+        /* 112.5% */
+        letter-spacing: -0.64px;
+    }
+
+    .news-subtitle {
+        color: var(--Blackish, #201E1F);
+        /* font-family: "Helvetica Neue LT Pro"; */
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 14px;
+        /* 150% */
+    }
+     .hero-slider h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.hero-slider h2 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 14%;
+    padding-bottom: 7%;
+}
+.care-lead {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #111111;
+    line-height: 1.1;
+}
+
+.care-text {
+    font-size: 0.7rem;
+    color: #222222;
+    line-height: 1.6;
+    font-weight: 300;
+}
+  .care-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+}
+
+@media (max-width :320px) {
+    .full-Header {
+        padding: 1% 1%;
+        height: 36px;
+    }
+
+    .navlogoitem {
+        width: 80px;
+    }
+
+    .mobile-menu-items {
+        display: flex;
+        max-width: 50%;
+        max-height: 264px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        /* display: none; */
+        background-color: white;
+        display: none;
+    }
+
+    #toggle_search_box-icon {
+        font-size: 15px;
+    }
+
+    #mobile-manu-icon-item {
+        font-size: 20px;
+    }
+
+    .heroheadingh1 {
+        font-weight: 200;
+        font-style: 20 Bold;
+        font-size: 25px;
+        leading-trim: NONE;
+        line-height: 25px;
+        padding-bottom: 8px;
+    }
+
+    .homebtn {
+        width: 95px;
+        height: 25px;
+        font-size: 8px;
+        font-weight: 300;
+    }
+
+    .heroimgitem {
+        height: 300px;
+    }
+
+    .homesection {
+        height: 50vh;
+
+    }
+
+    .heroheading {
+        top: 40%;
+    }
+
+    .herotext {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    #home-btn-bottom {
+        width: 100px;
+        height: 20px;
+        font-size: 7px;
+        font-weight: 300;
+    }
+
+    .heroimgitem {
+        height: 260px;
+    }
+
+    .backgroundimg {
+        height: 90px;
+    }
+
+    .slidertoptext {
+        font-size: 5px;
+    }
+
+    .arrevalhead {
+        margin-top: 8px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        letter-spacing: -1px;
+        line-height: 1;
+        font-family: "Helvetica Neue LT Pro";
+    }
+
+    .banner-text {
+        color: var(--white, #FFF);
+        text-align: center;
+        /* Paragraph */
+        /* font-family: "Helvetica Neue LT Pro"; */
+        font-size: 9px;
+        font-style: normal;
+        font-weight: 250;
+        line-height: 13px;
+
+    }
+     .hero-slider h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.hero-slider h2 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding-top: 14%;
+    padding-bottom: 7%;
+}
+
+}

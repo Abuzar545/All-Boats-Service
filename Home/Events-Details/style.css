@@ -199,202 +199,29 @@ nav {
     }
 }
 
-/* Hero sectio ----------- */
-.homesection {
+/* header section----------------- */
+/* Hero section---------------------------- */
+.hero {
+    padding-top: 84px;
+}
+
+.heroimg {
+    position: relative;
+    padding-top: 33%;
+
+}
+
+.heroimgitem {
+    position: absolute;
     width: 100%;
-   max-height: 800px;   
-    top: 80px;
-    /* angle: 0 deg; */
-    /* opacity: 1; */
-    background-color: #c4c4c4;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-.homesectionimg{
-    width: 100%;
-}
-/* sell Trade section ---------------- */
-.sell-trade{
-    margin: 40px 0;
-}
-.sellrightheading{
-    color: var(--Blackish, #201E1F);
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.sellleftcontent p{
-color: var(--Blackish, #201E1F);
-
-/* Paragraph */
-font-family: "Helvetica Neue LT Pro";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-margin-bottom: 40px;
-}
-/* sell Trade section ---------------- */
-/* All bosts section --------------------- */
-.AllBoatsection{
-    background: var(--Lightest-Gray---FA, #FAFAFA);
-    padding: 70px 0;
-}
-.allBoatsHeading{
-    max-width: 620px;
-    margin-bottom: 64px;
-}
-.rightheadingitem{
-        color: var(--Blackish, #201E1F);
-text-align: center;
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.iconback{
-    background-color: #5B95A9;
-    border-radius: 8px;
-background: var(--Aqua, #5B95A9);
-display: flex;
-width: 48px;
-height: 48px;
-justify-content: center;
-align-items: center;    
-}
-.allboatcontentreper{
-    display: flex;
-    gap: 24px;
-}
-.iconcontenth3{
-    color: var(--Blackish, #201E1F);
-
-/* h3 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px; /* 112.5% */
-letter-spacing: -0.64px;
-}
-.iconcontent{
-    max-width: 400px;
-}
-/* All bosts section --------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Advantage */
-.Advantagesection {
-    /* background-color: ; */
-    background: var(--Lightest-Gray---FA, #FAFAFA);
-}
-
-.bestcareleft {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;  */
-    justify-content: center;
-    max-width: 600px;
-}
-
-.bestcareleft h2 {
-    /* color: var(--Blackish, #201E1F); */
-
-    /* h2 */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-}
-
-.bestcareleft p {
-    /* color: var(--Blackish, #201E1F); */
-
-    font-family: "Helvetica Neue LT Proex";
-    font-size: 16px;
-    /* font-style: normal; */
-    font-weight: 300;
-    line-height: 28px;
-    /* 133.333% */
-    letter-spacing: -0.48px;
-}
-
-.service-list {
-    margin-left: 10px;
-}
-
-/* authorize section */
-.authorize {
-    padding: 80px 0;
-}
-
-.authorizetop {
-    max-width: 880px;
-    text-align: center;
-}
-
-.authorizetoph2 {
-    color: #000;
-    text-align: center;
-
-    /* h2 */
-    font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-    padding-bottom: 24px;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .homebtn {
-    width: 200px;
-    height: 48px;
+    width: fit-content;
+    height: fit-content;
     opacity: 1;
     border-radius: 24px;
     background-color: #5B95A9;
@@ -404,23 +231,257 @@ letter-spacing: -0.64px;
     cursor: pointer;
     color: var(--white, #FFF);
     text-align: center;
-    font-family: "Helvetica Neue LT Pro";
+    /* font-family: "Helvetica Neue LT Pro"; */
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
+    font-weight: 500;
+    line-height: 10px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    padding: 20px;
 }
-/* Submit section-------------------------- */
+
+.herohead {
+    color: var(--Blackish, #201E1F);
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+}
+
+.herop {
+    color: var(--Blackish, #201E1F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 40px 0;
+
+}
+
+.herofooter {
+    color: var(--Blackish, #201E1F);
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+    margin: 80px 0 40px 0;
+}
+
+.herocard {
+    max-width: 600px;
+    /* max-height:300px; */
+    background: var(--Blackish, #191919);
+    padding: 30px 0;
+    margin: -100px auto;
+
+}
+
+.heroicondev {
+    opacity: 0.6;
+    display: flex;
+    justify-content: start;
+    color: white;
+}
+
+.icondev img {
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1/1;
+}
+
+.icondev h4 {
+    color: var(--white, #FFF);
+
+    /* h4 */
+    /* font-family: "Helvetica Neue LT Pro"; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    display: inline;
+}
+
+.herocardh3 {
+    color: var(--white, #FFF);
+
+    /* h3 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
+    margin: 10px 0;
+}
+
+.herocardp {
+    color: var(--white, #FFF);
+
+    /* Paragraph */
+    /* font-family: "Helvetica Neue LT Pro"; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+/* Hero section---------------------------- */
+/* middle images -------------- */
+.outerdevimg {
+    position: relative;
+    padding-top: 45%;
+
+}
+
+.outerdevimgitem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* events card ---------------------------*/
+.eventheader {
+    color: var(--Blackish, #201E1F);
+    text-align: center;
+
+    /* h2 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    /* 108.333% */
+    letter-spacing: -0.96px;
+}
+
+
+
+/* Card */
+.card {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+/* Image Section */
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    /* Adjust as needed */
+    overflow: hidden;
+}
+
+.card-img-top-custom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #5B95A9;
+    font-weight: 600;
+}
+
+*/
+.custom-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 12px 0;
+}
+
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #777;
+}
+
+.spec-item img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.vertical-separator {
+    margin: 0 10px;
+    color: #cfcfcf;
+    font-size: 12px;
+}
+
+.bi-clock {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-img-wrapper {
+        height: 220px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+  /* <!-- Conatct and registrasion setion-------------------- --> */
 .request-raper {
-    max-width: 520px;
+    max-width: 720px;
     text-align: center;
     display: flex;
     text-align: center;
     flex-direction: column;
     gap: 15px;
-    /* text-align: center; */
+  
     justify-content: center;
 }
 
@@ -434,7 +495,7 @@ letter-spacing: -0.64px;
     font-style: normal;
     font-weight: 700;
     line-height: 52px;
-    /* 108.333% */
+   
     letter-spacing: -0.96px;
 }
 .requestinput{
@@ -442,11 +503,28 @@ letter-spacing: -0.64px;
     border: 1px solid #D9D9D9;
     width: 100%;
     padding: 10px 0 7px 5% ;
+    max-width: 520PX;
+    margin: 0 auto;
 }
 .submit{
     margin: 4% 0 5% 0;
 }
-/* Submit section-------------------------- */
+  /* <!-- Conatct and registrasion setion-------------------- --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer------------------------------------------------------------- */
@@ -665,4 +743,5 @@ letter-spacing: -0.64px;
     letter-spacing: -0.48px;
     display: inline;
 }
+
 /* footer------------------------------------------------------------- */

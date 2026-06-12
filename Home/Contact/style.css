@@ -201,130 +201,18 @@ nav {
 
 /* Hero sectio ----------- */
 .homesection {
+    position: relative;
+    padding-top: 33%;
+}
+.homesection img{
+    position: absolute;
     width: 100%;
-   max-height: 800px;   
-    top: 80px;
-    /* angle: 0 deg; */
-    /* opacity: 1; */
-    background-color: #c4c4c4;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
+    height: 100%; 
+    left: 0;
+    top: 0;
 }
-.homesectionimg{
-    width: 100%;
-}
-/* sell Trade section ---------------- */
-.sell-trade{
-    margin: 40px 0;
-}
-.sellrightheading{
-    color: var(--Blackish, #201E1F);
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.sellleftcontent p{
-color: var(--Blackish, #201E1F);
-
-/* Paragraph */
-font-family: "Helvetica Neue LT Pro";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-margin-bottom: 40px;
-}
-/* sell Trade section ---------------- */
-/* All bosts section --------------------- */
-.AllBoatsection{
-    background: var(--Lightest-Gray---FA, #FAFAFA);
-    padding: 70px 0;
-}
-.allBoatsHeading{
-    max-width: 620px;
-    margin-bottom: 64px;
-}
-.rightheadingitem{
-        color: var(--Blackish, #201E1F);
-text-align: center;
-
-/* h2 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 52px; /* 108.333% */
-letter-spacing: -0.96px;
-}
-.iconback{
-    background-color: #5B95A9;
-    border-radius: 8px;
-background: var(--Aqua, #5B95A9);
-display: flex;
-width: 48px;
-height: 48px;
-justify-content: center;
-align-items: center;    
-}
-.allboatcontentreper{
-    display: flex;
-    gap: 24px;
-}
-.iconcontenth3{
-    color: var(--Blackish, #201E1F);
-
-/* h3 */
-font-family: "Helvetica Neue LT Pro";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 36px; /* 112.5% */
-letter-spacing: -0.64px;
-}
-.iconcontent{
-    max-width: 400px;
-}
-/* All bosts section --------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Advantage */
+    
+/* confidence section----------------------- */
 .Advantagesection {
     /* background-color: ; */
     background: var(--Lightest-Gray---FA, #FAFAFA);
@@ -335,7 +223,7 @@ letter-spacing: -0.64px;
     flex-direction: column;
     /* align-items: center;  */
     justify-content: center;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 .bestcareleft h2 {
@@ -367,31 +255,35 @@ letter-spacing: -0.64px;
     margin-left: 10px;
 }
 
-/* authorize section */
-.authorize {
-    padding: 80px 0;
+.bestcareimg {
+    width: 920px;
+    height: 520px;
+    background: #C4C4C4;
 }
 
-.authorizetop {
-    max-width: 880px;
-    text-align: center;
-}
+.confidence-number {
+    color: var(--Aqua, #5B95A9);
 
-.authorizetoph2 {
-    color: #000;
-    text-align: center;
-
-    /* h2 */
+    /* h3 */
     font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
-    padding-bottom: 24px;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
 }
 
+.confidence-daliyout {
+    color: var(--Blackish, #201E1F);
+
+    /* Paragraph */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
 .homebtn {
     width: 200px;
     height: 48px;
@@ -412,7 +304,42 @@ letter-spacing: -0.64px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
 }
-/* Submit section-------------------------- */
+
+
+/* confidence section----------------------- */
+
+
+
+/* Contact section------------------------------------------------- */
+.contactheading {
+    margin: 63px 0 40px 0;
+}
+
+.contactheadingh1 {
+    /* color: var(--Blackish, #201E1F); */
+
+    /* H1 */
+    font-family: "Helvetica Neue LT Pro";
+    font-size: 77px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    /* 100% */
+    letter-spacing: -1.6px;
+}
+
+.contactp {
+    color: var(--Blackish, #201E1F);
+
+    /* Paragraph */
+    /* font-family: "Helvetica Neue LT Pro"; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
 .request-raper {
     max-width: 520px;
     text-align: center;
@@ -422,31 +349,57 @@ letter-spacing: -0.64px;
     gap: 15px;
     /* text-align: center; */
     justify-content: center;
+    background-color: #000;
+    z-index: 2;
+    margin-top: -16%;
+    padding: 68px 0;
 }
 
 .requestheader {
-    color: var(--Blackish, #201E1F);
+    color: var(--white, #FFF);
     text-align: center;
 
-    /* h2 */
+    /* h3 */
     font-family: "Helvetica Neue LT Pro";
-    font-size: 48px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 52px;
-    /* 108.333% */
-    letter-spacing: -0.96px;
+    line-height: 36px;
+    /* 112.5% */
+    letter-spacing: -0.64px;
 }
-.requestinput{
+
+.requestinput {
     border-radius: 24px;
     border: 1px solid #D9D9D9;
     width: 100%;
-    padding: 10px 0 7px 5% ;
+    padding: 10px 0 9px 5%;
+    max-width: 400px;
+    margin: 0 auto;
 }
-.submit{
-    margin: 4% 0 5% 0;
-}
-/* Submit section-------------------------- */
+
+/* request section--------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer------------------------------------------------------------- */
@@ -665,4 +618,5 @@ letter-spacing: -0.64px;
     letter-spacing: -0.48px;
     display: inline;
 }
+
 /* footer------------------------------------------------------------- */
