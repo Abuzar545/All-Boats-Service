@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
-    <!-- nav bar ------------------------------- -->
+
+    <!-- nav bar -------------------------------------- -->
     <nav>
         <div class="full-Header">
 
@@ -21,12 +24,15 @@
             <!-- Left Navigation -->
             <div class="navlink">
                 <ul class="navlink-content">
-                    <li><a href="#" class="centralNavLink">Inventory</a></li>
-                    <li><a href="#" class="centralNavLink">Service & Parts</a></li>
-                    <li><a href="#" class="centralNavLink">Our World</a></li>
+                    <li><a href="#" class="centralNavLink inventery-menu">Inventory</a></li>
+                    <li><a href="#" class="centralNavLink service-menu">Service & Parts</a></li>
+                    <li><a href="#" class="centralNavLink resources-menu">Our World</a></li>
+
                 </ul>
             </div>
-
+            <!-- mobile-manu icons------------------------ -->
+            <li class="mobile-manu-icon"><i class="bi bi-list" id="mobile-manu-icon-item"></i></i></li>
+            <!-- mobile-manu icons------------------------ -->
             <!-- Logo -->
             <div class="navlogo">
                 <a href="">
@@ -53,8 +59,9 @@
                 </div>
 
                 <div class="">
+
                     <button id="toggle_search_box">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search" id="toggle_search_box-icon"></i>
                     </button>
                 </div>
 
@@ -63,28 +70,168 @@
 
         </div>
     </nav>
-    <!-- nav bar ------------------------------- -->
+    <!-- nav bar -------------------------------------- -->
+
+    <!-- mobile menu----------- -->
+    <div class="menu-Mobile">
+        <div class="container-fluid">
+            <div class="row px-0">
+                <div class="col-6 px-0">
+                    <div class="row px-0">
+                        <div class="col-4">
+                            <div class="mobile-menu-items">
+                                <a href="" class="ser-menu-p mt-4">
+                                    <p>Inventory</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>Service & Parts</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>Our World</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <P class="" style="color: black;">
+                                        (606) 561-6331
+                                    </p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p class="selectStoreNumber">
+                                        Call or Text
+                                    </p>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="col-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu----------- -->
+    <!-- menu inventery------------------- -->
+    <div class="menuinv-rapper">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xl-8 col-lg-9 mx-auto">
+                    <div class="row my-5">
+                        <div class="col-3">
+                            <a href="" class="invmenua">
+                                <h5>All Boat Sales</h5>
+                            </a>
+                            <a href="" class="invmenua my-5">
+                                <h5>Get Financing</h5>
+                            </a>
+                            <a href="" class="invmenua">
+                                <h5>Sell/Trade Your Boat</h5>
+                            </a>
+                        </div>
+                        <div class="col-9">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="invimgrapper overlay">
+                                        <img src="../assets/mega-menu/invmenuimg1.png" class="invimg" alt="">
+                                        <h3 class="invimgtext">New JC Poontoon Boats</h3>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="invimgrapper overlay">
+                                        <img src="../assets/mega-menu/invimg2.png" class="invimg" alt="">
+                                        <h3 class="invimgtext">Pre-Owned Boats</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu inventery------------------- -->
+    <!-- service menu----------------- -->
+    <div class="service-menu-rapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 col-10 mx-auto">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="invimgrapper overlay">
+                                <img src="../assets/mega-menu/sermenuimg1.png" class="invimg" alt="">
+                                <h3 class="invimgtext">Service Center</h3>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="invimgrapper overlay">
+                                <img src="../assets/mega-menu/serimg2.png" class="invimg" alt="">
+                                <h3 class="invimgtext">Parts</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service menu----------------- -->
+    <!-- menu-resource----------------------------- -->
+    <div class="menu-resource">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="ser-menu-raper">
+                                <a href="" class="ser-menu-p mt-4">
+                                    <p>Events & Promotions</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>News & Articles</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>About Us</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>Contact</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>FAQ</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu-resource----------------------------- -->
+
+
+
+
+
     <!-- Hero section--------------------------- -->
     <section class="mb-5">
         <div class="homesection mx-auto">
-            <img src="../../assets/Events/grayimg.png" alt="">
+            <img src="../../assets/Events/grayimg.png" alt="All Boats Service Center Hero">
             <div class="heroheading">
-                <h1 class="heroheadingh1 pb-5">About All Boats Service Center</h1>
+                <h1 class="heroheadingh1 pb-3 pb-md-5">About All Boats Service Center</h1>
                 <h3 class="heroheadingh3">About All Boats Service Center</h3>
                 <p class="heroheadingp">Family-owned, community-focused, and dedicated to the spirit of Lake Cumberland
                     since [Year Founded]</p>
-                <div class="btndev mx-auto"><button class="homebtn">CONTACT US </button></div>
+                <div class="btndev mx-auto"><button class="homebtn">CONTACT US</button></div>
             </div>
         </div>
     </section>
     <!-- Hero section--------------------------- -->
     <!-- Our Story section section ------------------------------------->
 
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-9 mx-auto">
-                <div class="row">
-                    <div class="col-6 d-flex justify-content-center align-items-cente">
+            <div class="col-12 col-xl-9 mx-auto">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                         <div class="bestcareleft">
                             <h2>Our Culture: Built by Boaters, for Boaters</h2>
                             <div class="paradev">
@@ -93,17 +240,17 @@
                                     standard of technical expertise combined with hometown honesty, All Boats Service
                                     Center grew from a modest repair shop into the area’s premier #1 Parts and Service
                                     Dealer.</p>
-                                <p> We didn't get here by accident. We built our reputation one engine, one trailer, and
+                                <p>We didn't get here by accident. We built our reputation one engine, one trailer, and
                                     one customer at a time. Over the years, we’ve seen the industry change—from
                                     carburetors to complex EFI systems—but our core mission has remained the same:
                                     Keeping families on the water and making memories.</p>
                             </div>
-                            <button class="homebtn">CONTACT US </button>
+                            <button class="homebtn">CONTACT US</button>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="bestcareimg">
-                            <img src="../../assets/Events/grayimg.png" class="bestcareimgitem" alt="">
+                            <img src="../../assets/Events/grayimg.png" class="bestcareimgitem" alt="Our Story Image">
                         </div>
                     </div>
                 </div>
@@ -114,49 +261,39 @@
 
     <!-- Our Culture section section ------------------------------------->
 
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-9 mx-auto">
+            <div class="col-12 col-xl-9 mx-auto">
                 <div class="outerrayyper">
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 order-2 order-lg-1">
                             <div class="bestcareimg">
-                                <img src="../../assets/Events/grayimg.png" class="bestcareimgitem" alt="">
+                                <img src="../../assets/Events/grayimg.png" class="bestcareimgitem"
+                                    alt="Expert Repair Image">
                             </div>
                         </div>
-                        <div class="col-6 d-flex justify-content-center align-items-cente">
+                        <div
+                            class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0 order-1 order-lg-2">
                             <div class="bestcareleft">
-
-
                                 <h2>Expert Mechanical & Engine Repair</h2>
                                 <div class="paradev">
                                     <p class="service-text">
-                                        As an authorized service dealer for the industry's top manufacturers,
-                                        we provide specialized care that keeps your warranty intact and your
-                                        engine performing at its peak.
+                                        As an authorized service dealer for the industry's top manufacturers, we provide
+                                        specialized care that keeps your warranty intact and your engine performing at
+                                        its peak.
                                     </p>
-
                                     <ul class="service-list">
-                                        <li>
-                                            <strong>Authorized Brands:</strong>
-                                            Mercury, MerCruiser, Volvo Penta, Yamaha, Suzuki, and OMC.
-                                        </li>
-                                        <li>
-                                            <strong>Computer Diagnostics:</strong>
-                                            Precision troubleshooting for EFI and DFI systems.
-                                        </li>
-                                        <li>
-                                            <strong>Major Rebuilds:</strong>
-                                            Complete engine and drive-train overhauls.
+                                        <li><strong>Authorized Brands:</strong> Mercury, MerCruiser, Volvo Penta,
+                                            Yamaha, Suzuki, and OMC.</li>
+                                        <li><strong>Computer Diagnostics:</strong> Precision troubleshooting for EFI and
+                                            DFI systems.</li>
+                                        <li><strong>Major Rebuilds:</strong> Complete engine and drive-train overhauls.
                                         </li>
                                     </ul>
-
                                 </div>
-
-                                <button class="homebtn">CONTACT US </button>
+                                <button class="homebtn">CONTACT US</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -165,46 +302,34 @@
     <!-- our Culture section ------------------------------------->
 
     <!-- Our Root section ------------------------------------->
-
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-9 mx-auto">
-                <div class="row">
-                    <div class="col-6 d-flex justify-content-center align-items-cente">
+            <div class="col-12 col-xl-9 mx-auto">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                         <div class="bestcareleft">
-
-
                             <h2>Rooted in the Lake Cumberland Community</h2>
                             <div class="paradev">
                                 <p class="service-text">
-                                    As an authorized service dealer for the industry's top manufacturers,
-                                    we provide specialized care that keeps your warranty intact and your
-                                    engine performing at its peak.
+                                    As an authorized service dealer for the industry's top manufacturers, we provide
+                                    specialized care that keeps your warranty intact and your engine performing at its
+                                    peak.
                                 </p>
-
                                 <ul class="service-list">
-                                    <li>
-                                        <strong>Authorized Brands:</strong>
-                                        Mercury, MerCruiser, Volvo Penta, Yamaha, Suzuki, and OMC.
-                                    </li>
-                                    <li>
-                                        <strong>Computer Diagnostics:</strong>
-                                        Precision troubleshooting for EFI and DFI systems.
-                                    </li>
-                                    <li>
-                                        <strong>Major Rebuilds:</strong>
-                                        Complete engine and drive-train overhauls.
-                                    </li>
+                                    <li><strong>Authorized Brands:</strong> Mercury, MerCruiser, Volvo Penta, Yamaha,
+                                        Suzuki, and OMC.</li>
+                                    <li><strong>Computer Diagnostics:</strong> Precision troubleshooting for EFI and DFI
+                                        systems.</li>
+                                    <li><strong>Major Rebuilds:</strong> Complete engine and drive-train overhauls.</li>
                                 </ul>
-
                             </div>
-
-                            <button class="homebtn">CONTACT US </button>
+                            <button class="homebtn">CONTACT US</button>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <div class="bestcareimg">
-                            <img src="../../assets/Events/grayimg.png" class="bestcareimgitem" alt="">
+                            <img src="../../assets/Events/grayimg.png" class="bestcareimgitem"
+                                alt="Community Rooted Image">
                         </div>
                     </div>
                 </div>
@@ -214,32 +339,30 @@
     <!-- our root section ------------------------------------->
     <!-- Meet the Team Behind the Tools section ------------------------------------->
 
-    <div class="container-fluid">
+    <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-9 mx-auto">
+            <div class="col-12 col-xl-9 mx-auto">
                 <div class="outerrayyper">
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 order-2 order-lg-1">
                             <div class="bestcareimg">
-                                <img src="../../assets/Events/grayimg.png" class="bestcareimgitem" alt="">
+                                <img src="../../assets/Events/grayimg.png" class="bestcareimgitem"
+                                    alt="Meet the Team Image">
                             </div>
                         </div>
-                        <div class="col-6 d-flex justify-content-center align-items-cente">
+                        <div
+                            class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0 order-1 order-lg-2">
                             <div class="bestcareleft">
-
-
                                 <h2>Meet the Team Behind the Tools</h2>
-                                <div class="paradev ml-4">
+                                <div class="paradev ml-0 ml-sm-4">
                                     <div class="lastdev">
                                         <h3 class="lastdevh3">"We don't just measure success by the number of boats we
                                             service, but by the number of smiles we see out on the lake."</h3>
-
                                     </div>
                                 </div>
-                                <button class="homebtn">CONTACT US </button>
+                                <button class="homebtn">CONTACT US</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -248,106 +371,138 @@
     <!-- our Culture section ------------------------------------->
     <!-- hello by section --------------------->
     <section class="hello">
-
-        <div class="homesection overlay  mx-auto">
-            
-                <img src="../../assets/About/aboutimg.png" alt="">
-            
+        <div class="homesection overlay mx-auto">
+            <img src="../../assets/About/aboutimg.png" alt="Stop by background">
             <div class="heroheading">
-                <h2 class="heroheadingh2 pb-5">Stop By and Say Hello</h2>
+                <h2 class="heroheadingh2 pb-3 pb-md-5">Stop By and Say Hello</h2>
                 <h5 class="heroheadingh5">Whether you need a hard-to-find part or just want to talk shop about the
-                    upcoming season, our doors are always open. Come see why we’ve been Lake Cumberland’s trusted
-                    marine
+                    upcoming season, our doors are always open. Come see why we’ve been Lake Cumberland’s trusted marine
                     partner for decades.</h5>
-
-                <div class="btndev mx-auto mt-5" style="background-color: transparent;"><button class="homebtn" style="background-color: transparent; border: 1px solid white;">CONTACT US </button></div>
+                <div class="btndev mx-auto mt-4 mt-md-5" style="background-color: transparent;">
+                    <button class="homebtn" style="background-color: transparent; border: 1px solid white;">CONTACT
+                        US</button>
+                </div>
             </div>
         </div>
     </section>
     <!-- hello by section --------------------------->
 
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- footer ----------------------------------------------------------------- -->
     <section class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 mx-auto">
+
+                <!-- Left Content -->
+                <div class="col-lg-8 col-12 py-5">
                     <div class="row">
-                        <div class="col-8 py-5">
-                            <div class="row">
-                                <div class="col-6 mx-auto" id="footerrightside">
-                                    <div class="footerlogo">
-                                        <img src="../assets/Home/navlogo.png" class="footerlogo" alt="">
-                                    </div>
-                                    <div class="footerrighttext">
-                                        <p>2100 Highway 90,<br /> Bronston, KY 42518-9534</p>
-                                    </div>
-                                    <div class="footerrightnumber">
-                                        <h3>(606) 561-6331</h3>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-6" id="footercentersection">
-                                            <h4>BOATS</h4>
-                                            <p>All Boats</p>
-                                            <p>New Boats </p>
-                                            <p>Pre-Owned</p>
-                                            <p>Service Your Boat</p>
-                                            <p>Parts</p>
-                                            <p>Financing</p>
-                                            <p>Trade / Sell Your Boat</p>
-                                        </div>
-                                        <div class="col-6" id="footercentersection">
-                                            <h4>COMPANY</h4>
-                                            <p>Events</p>
-                                            <p>About</p>
-                                            <p>Mews and Articles</p>
-                                            <p>Contact</p>
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div class="col-10 mx-auto">
-                                    <div class="copyright">
-                                        <a class="footerBottomLink" href="#">Copyright</a>
-                                        <a class="footerBottomLink bottomLinkLine" href="#">Powered By MDS Brand</a>
-                                        <a class="footerBottomLink bottomLinkLine" href="#">Sitemap</a>
-                                    </div>
-
-                                </div>
+                        <!-- Logo & Contact -->
+                        <div class="col-lg-6 col-md-12 mb-4" id="footerrightside">
+                            <div class="footerlogo">
+                                <img src="../../assets/Home/navlogo.png" alt="Logo">
                             </div>
-                        </div>
-                        <div class="col-4 footerleft">
-                            <div class="newsletter-box">
-                                <h2>Enter Our World</h2>
 
+                            <div class="footerrighttext">
                                 <p>
-                                    Our Newsletter informs of promotions, events,
-                                    All <br> Boats Service Center news, and more.
+                                    2100 Highway 90,<br>
+                                    Bronston, KY 42518-9534
                                 </p>
+                            </div>
 
-                                <form class="newsletter-form">
-                                    <input type="email" class="form-control" placeholder="Enter your email address">
-                                    <button type="submit">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </button>
-                                </form>
-
-                                <div class="social-icons">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fas fa-times"></i></a>
-                                </div>
+                            <div class="footerrightnumber">
+                                <h3>(606) 561-6331</h3>
                             </div>
                         </div>
+
+                        <!-- Footer Links -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="row">
+
+                                <div class="col-sm-6 col-12 mb-4 footercentersection">
+                                    <h4>BOATS</h4>
+                                    <p>All Boats</p>
+                                    <p>New Boats</p>
+                                    <p>Pre-Owned</p>
+                                    <p>Service Your Boat</p>
+                                    <p>Parts</p>
+                                    <p>Financing</p>
+                                    <p>Trade / Sell Your Boat</p>
+                                </div>
+
+                                <div class="col-sm-6 col-12 mb-4 footercentersection">
+                                    <h4>COMPANY</h4>
+                                    <p>Events</p>
+                                    <p>About</p>
+                                    <p>News and Articles</p>
+                                    <p>Contact</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Copyright -->
+                        <div class="col-12 mt-4">
+                            <div class="copyright">
+                                <a class="footerBottomLink" href="#">Copyright</a>
+                                <a class="footerBottomLink bottomLinkLine" href="#">
+                                    Powered By MDS Brand
+                                </a>
+                                <a class="footerBottomLink bottomLinkLine" href="#">
+                                    Sitemap
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+                <!-- Newsletter Section -->
+                <div class="col-lg-4 col-12 footerleft">
+                    <div class="newsletter-box">
+
+                        <h2>Enter Our World</h2>
+
+                        <p>
+                            Our Newsletter informs of promotions, events,
+                            All Boats Service Center news, and more.
+                        </p>
+
+                        <form class="newsletter-form">
+                            <input type="email" class="form-control" placeholder="Enter your email address">
+
+                            <button type="submit">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
         </div>
     </section>
     <!-- footer ----------------------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

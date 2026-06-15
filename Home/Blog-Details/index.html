@@ -9,24 +9,28 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- nav bar -------------------------------------- -->
-    <nav>
+     <nav>
         <div class="full-Header">
 
 
             <!-- Left Navigation -->
             <div class="navlink">
                 <ul class="navlink-content">
-                    <li><a href="#" class="centralNavLink">Inventory</a></li>
-                    <li><a href="#" class="centralNavLink">Service & Parts</a></li>
-                    <li><a href="#" class="centralNavLink">Our World</a></li>
+                    <li><a href="#" class="centralNavLink inventery-menu">Inventory</a></li>
+                    <li><a href="#" class="centralNavLink service-menu">Service & Parts</a></li>
+                    <li><a href="#" class="centralNavLink resources-menu">Our World</a></li>
+
                 </ul>
             </div>
-
+            <!-- mobile-manu icons------------------------ -->
+            <li class="mobile-manu-icon"><i class="bi bi-list" id="mobile-manu-icon-item"></i></i></li>
+            <!-- mobile-manu icons------------------------ -->
             <!-- Logo -->
             <div class="navlogo">
                 <a href="">
@@ -53,8 +57,9 @@
                 </div>
 
                 <div class="">
+
                     <button id="toggle_search_box">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search" id="toggle_search_box-icon"></i>
                     </button>
                 </div>
 
@@ -65,194 +70,74 @@
     </nav>
     <!-- nav bar -------------------------------------- -->
 
-    <!-- Hero nav bar---------------------------------------- -->
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="navlink2">
-                <ul class="navlink-content2">
-                    <li><a href="#" class="centralNavLink2">Home</a></li>
-                    <li><a href="#" class="centralNavLink2">Blog</a></li>
-                    <li><a href="#" class="centralNavLink2">Blog post tittle</a></li>
+    <!-- mobile menu----------- -->
+    <div class="menu-Mobile">
+        <div class="container-fluid">
+            <div class="row px-0">
+                <div class="col-6 px-0">
+                    <div class="row px-0">
+                        <div class="col-4">
+                            <div class="mobile-menu-items">
+                                <a href="" class="ser-menu-p mt-4">
+                                    <p>Inventory</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>Service & Parts</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>Our World</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <P class="" style="color: black;">
+                                        (606) 561-6331
+                                    </p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p class="selectStoreNumber">
+                                        Call or Text
+                                    </p>
+                                </a>
 
+                            </div>
+                        </div>
+                        <div class="col-8"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Hero nav bar---------------------------------------- -->
-    <!-- Article tittle---------------------------- -->
-    <section>
+    <!-- mobile menu----------- -->
+    <!-- menu inventery------------------- -->
+    <div class="menuinv-rapper">
         <div class="container-fluid">
+
             <div class="row">
-                <div class="col-9 mx-auto pt-5">
-                    <div class="row">
-                        <div class="col-8 px-0">
-                            <div class="articaldev">
-                                <div class="Articleimgdev">
-                                    <img src="../../assets/Blog/blogdetailsimg.png" alt="" class="Articleimg">
-                                </div>
-                                <div class="artical-content">
-                                    <h2 class="artical-header">Article Title</h2>
-                                    <a class="artical-link" href="#">NEWS</a>
-                                    <a class="artical-link artical-linkline pb-5" href="#">11/15/2026</a>
-
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                        deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                                        id est laborum.</p>
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                        deserunt mollit anim id est laborum.</p>
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                        culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-                                </p>
-                            </div>
-
+                <div class="col-xl-8 col-lg-9 mx-auto">
+                    <div class="row my-5">
+                        <div class="col-3">
+                            <a href="" class="invmenua">
+                                <h5>All Boat Sales</h5>
+                            </a>
+                            <a href="" class="invmenua my-5">
+                                <h5>Get Financing</h5>
+                            </a>
+                            <a href="" class="invmenua">
+                                <h5>Sell/Trade Your Boat</h5>
+                            </a>
                         </div>
-                        <div class="col-4">
-                            <div class="devsimilar">
-                                <h3 class="devsimilar-header">Similar Posts</h3>
-                                <div class="similarcard">
-                                    <div class="similarcardimgdev">
-                                        <img src="../../assets/Blog/blogdetailsimg.png" alt="" class="similarcardimg">
-                                    </div>
-                                    <div class="dectext mt-2">
-                                        <h5 class="similarcardtext">Blog title</h5>
-                                    </div>
-                                </div>
-                                <div class="similarcard">
-                                    <div class="similarcardimgdev">
-                                        <img src="../../assets/Blog/blogdetailsimg.png" alt="" class="similarcardimg">
-                                    </div>
-                                    <div class="dectext mt-2">
-                                        <h5 class="similarcardtext">Blog title</h5>
-                                    </div>
-                                </div>
-                                <div class="similarcard">
-                                    <div class="similarcardimgdev">
-                                        <img src="../../assets/Blog/blogdetailsimg.png" alt="" class="similarcardimg">
-                                    </div>
-                                    <div class="dectext mt-2">
-                                        <h5 class="similarcardtext">Blog title</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Article tittle---------------------------- -->
-
-
-
-
-
-    <!-- footer ----------------------------------------------------------------- -->
-    <section class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 mx-auto">
-                    <div class="row">
-                        <div class="col-8 py-5">
+                        <div class="col-9">
                             <div class="row">
-                                <div class="col-6 mx-auto" id="footerrightside">
-                                    <div class="footerlogo">
-                                        <img src="../../assets/Home/navlogo.png" class="footerlogo" alt="">
-                                    </div>
-                                    <div class="footerrighttext">
-                                        <p>2100 Highway 90,<br /> Bronston, KY 42518-9534</p>
-                                    </div>
-                                    <div class="footerrightnumber">
-                                        <h3>(606) 561-6331</h3>
+                                <div class="col-6">
+                                    <div class="invimgrapper overlay">
+                                        <img src="../assets/mega-menu/invmenuimg1.png" class="invimg" alt="">
+                                        <h3 class="invimgtext">New JC Poontoon Boats</h3>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-6" id="footercentersection">
-                                            <h4>BOATS</h4>
-                                            <p>All Boats</p>
-                                            <p>New Boats </p>
-                                            <p>Pre-Owned</p>
-                                            <p>Service Your Boat</p>
-                                            <p>Parts</p>
-                                            <p>Financing</p>
-                                            <p>Trade / Sell Your Boat</p>
-                                        </div>
-                                        <div class="col-6" id="footercentersection">
-                                            <h4>COMPANY</h4>
-                                            <p>Events</p>
-                                            <p>About</p>
-                                            <p>Mews and Articles</p>
-                                            <p>Contact</p>
-                                        </div>
-
+                                    <div class="invimgrapper overlay">
+                                        <img src="../assets/mega-menu/invimg2.png" class="invimg" alt="">
+                                        <h3 class="invimgtext">Pre-Owned Boats</h3>
                                     </div>
-                                </div>
-                                <div class="col-10 mx-auto">
-                                    <div class="copyright">
-                                        <a class="footerBottomLink" href="#">Copyright</a>
-                                        <a class="footerBottomLink bottomLinkLine" href="#">Powered By MDS Brand</a>
-                                        <a class="footerBottomLink bottomLinkLine" href="#">Sitemap</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 footerleft">
-                            <div class="newsletter-box">
-                                <h2>Enter Our World</h2>
-
-                                <p>
-                                    Our Newsletter informs of promotions, events,
-                                    All <br> Boats Service Center news, and more.
-                                </p>
-
-                                <form class="newsletter-form">
-                                    <input type="email" class="form-control" placeholder="Enter your email address">
-                                    <button type="submit">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </button>
-                                </form>
-
-                                <div class="social-icons">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <a href="#"><i class="fas fa-times"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -260,9 +145,316 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- menu inventery------------------- -->
+    <!-- service menu----------------- -->
+    <div class="service-menu-rapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 col-10 mx-auto">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="invimgrapper overlay">
+                                <img src="../assets/mega-menu/sermenuimg1.png" class="invimg" alt="">
+                                <h3 class="invimgtext">Service Center</h3>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="invimgrapper overlay">
+                                <img src="../assets/mega-menu/serimg2.png" class="invimg" alt="">
+                                <h3 class="invimgtext">Parts</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service menu----------------- -->
+    <!-- menu-resource----------------------------- -->
+    <div class="menu-resource">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="ser-menu-raper">
+                                <a href="" class="ser-menu-p mt-4">
+                                    <p>Events & Promotions</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>News & Articles</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>About Us</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>Contact</p>
+                                </a>
+                                <a href="" class="ser-menu-p">
+                                    <p>FAQ</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu-resource----------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Hero nav bar---------------------------------------- -->
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12 col-xl-9 mx-auto">
+            <div class="navlink2">
+                <ul class="navlink-content2">
+                    <li><a href="#" class="centralNavLink2">Home</a></li>
+                    <li class="nav-separator">/</li>
+                    <li><a href="#" class="centralNavLink2">Blog</a></li>
+                    <li class="nav-separator">/</li>
+                    <li><a href="#" class="centralNavLink2 active-crumb">Blog post title</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero nav bar---------------------------------------- -->
+
+<!-- Article Section---------------------------- -->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-xl-9 mx-auto pt-4 pt-md-5">
+                <div class="row">
+                    <!-- Main Article Column -->
+                    <div class="col-12 col-lg-8 px-0 mb-5 mb-lg-0">
+                        <div class="articaldev">
+                            <div class="Articleimgdev">
+                                <img src="../../assets/Blog/blogdetailsimg.png" alt="Featured Article Image" class="Articleimg">
+                            </div>
+                            <div class="artical-content">
+                                <h1 class="artical-header">Article Title</h1>
+                                <div class="article-meta mb-4">
+                                    <a class="artical-link" href="#">NEWS</a>
+                                    <span class="artical-linkline"></span>
+                                    <a class="artical-link" href="#">11/15/2026</a>
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id est laborum.</p>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Column -->
+                    <div class="col-12 col-lg-4 px-0">
+                        <div class="devsimilar">
+                            <h3 class="devsimilar-header">Similar Posts</h3>
+                            
+                            <!-- Card 1 -->
+                            <div class="similarcard">
+                                <div class="similarcardimgdev">
+                                    <img src="../../assets/Blog/blogdetailsimg.png" alt="Similar Post Thumbnail" class="similarcardimg">
+                                </div>
+                                <div class="dectext mt-2">
+                                    <h5 class="similarcardtext">Blog title</h5>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="similarcard">
+                                <div class="similarcardimgdev">
+                                    <img src="../../assets/Blog/blogdetailsimg.png" alt="Similar Post Thumbnail" class="similarcardimg">
+                                </div>
+                                <div class="dectext mt-2">
+                                    <h5 class="similarcardtext">Blog title</h5>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="similarcard">
+                                <div class="similarcardimgdev">
+                                    <img src="../../assets/Blog/blogdetailsimg.png" alt="Similar Post Thumbnail" class="similarcardimg">
+                                </div>
+                                <div class="dectext mt-2">
+                                    <h5 class="similarcardtext">Blog title</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Article Section---------------------------- -->
+
+  <!-- footer ----------------------------------------------------------------- -->
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Left Content -->
+                <div class="col-lg-8 col-12 py-5">
+                    <div class="row">
+
+                        <!-- Logo & Contact -->
+                        <div class="col-lg-6 col-md-12 mb-4" id="footerrightside">
+                            <div class="footerlogo">
+                                <img src="../../assets/Home/navlogo.png" alt="Logo">
+                            </div>
+
+                            <div class="footerrighttext">
+                                <p>
+                                    2100 Highway 90,<br>
+                                    Bronston, KY 42518-9534
+                                </p>
+                            </div>
+
+                            <div class="footerrightnumber">
+                                <h3>(606) 561-6331</h3>
+                            </div>
+                        </div>
+
+                        <!-- Footer Links -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="row">
+
+                                <div class="col-sm-6 col-12 mb-4 footercentersection">
+                                    <h4>BOATS</h4>
+                                    <p>All Boats</p>
+                                    <p>New Boats</p>
+                                    <p>Pre-Owned</p>
+                                    <p>Service Your Boat</p>
+                                    <p>Parts</p>
+                                    <p>Financing</p>
+                                    <p>Trade / Sell Your Boat</p>
+                                </div>
+
+                                <div class="col-sm-6 col-12 mb-4 footercentersection">
+                                    <h4>COMPANY</h4>
+                                    <p>Events</p>
+                                    <p>About</p>
+                                    <p>News and Articles</p>
+                                    <p>Contact</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Copyright -->
+                        <div class="col-12 mt-4">
+                            <div class="copyright">
+                                <a class="footerBottomLink" href="#">Copyright</a>
+                                <a class="footerBottomLink bottomLinkLine" href="#">
+                                    Powered By MDS Brand
+                                </a>
+                                <a class="footerBottomLink bottomLinkLine" href="#">
+                                    Sitemap
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="col-lg-4 col-12 footerleft">
+                    <div class="newsletter-box">
+
+                        <h2>Enter Our World</h2>
+
+                        <p>
+                            Our Newsletter informs of promotions, events,
+                            All Boats Service Center news, and more.
+                        </p>
+
+                        <form class="newsletter-form">
+                            <input type="email" class="form-control" placeholder="Enter your email address">
+
+                            <button type="submit">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- footer ----------------------------------------------------------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script.js"></script>
+
+
+
+
 </body>
 
 </html>
